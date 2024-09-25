@@ -1,0 +1,120 @@
+/*.chromestyle{
+	width:62%;
+	height:auto;
+	float:left;
+	height:19px;
+	 margin: 10px 0 0;
+    padding: 5px 0 5px 10px;
+   background-color:#6DC0F2;
+	
+}*/
+.chromestyle{
+width:899px; height:25px; float:left; background-color:#6DC0F2; margin:0px 2px 0px 2px;padding: 5px 0 0px 0px;
+}
+
+.chromestyle:after{ /*Add margin between menu and rest of content in Firefox*/
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+.chromestyle ul{
+	font-family:"Trebuchet MS";
+	font-size:11px;
+	
+	font-weight:bold;
+	text-decoration:none;
+	padding:0px;
+	margin: 0;
+
+   color :#ffffff;
+}
+
+.chromestyle ul li{
+	display: inline;
+	
+}
+
+.chromestyle ul li a{
+	font-family:"Trebuchet MS";
+	font-size:11px;
+	color:#ffffff;
+	font-weight:bold;
+	text-decoration:none;
+	padding:0px 11px 0px 11px;
+	text-shadow: 0 1px 1px #999999;
+	background:url(../images/menu_separator.pngf) repeat-x top;
+
+}
+
+.chromestyle ul li a:hover, .chromestyle ul li a.selected{ /*script dynamically adds a class of "selected" to the current active menu item*/
+	font-family:"Trebuchet MS";
+	font-size:11px;
+	color:#000000;
+	font-weight:bold;
+	text-decoration:none;
+	padding:0px 11px 0px 11px;
+	/*text-shadow: 0 1px 1px #FFF; THEME CHANGE HERE*/
+}
+
+/* ######### Style for Drop Down Menu ######### */
+
+.dropmenudiv{
+position:absolute;
+top: 0;
+border: 1px solid #94AA74; /*THEME CHANGE HERE*/
+border-bottom-width: 0;
+font-family:"Trebuchet MS";
+	font-size:11px;
+	line-height:16px;
+z-index:100;
+background:url(../images/menu_strip.gif) repeat-x top;
+/*background-color:#55A3FF;*/
+background-color:#39A2DC;
+width: 180px;
+visibility: hidden;
+
+}
+
+
+.dropmenudiv a{
+width: auto;
+display: block;
+text-indent: 3px;
+border-bottom: 1px solid #FFF; /*THEME CHANGE HERE*/
+/*border-bottom: 1px solid #439eed;*/
+font-family:"Trebuchet MS";
+	font-size:11px;
+	color:#FFFFFF;
+	text-decoration:none;
+	padding:2px 5px 2px 5px;
+}
+
+* html .dropmenudiv a{ /*IE only hack*/
+width: auto;
+font-family:"Trebuchet MS";
+	font-size:11px;
+	color:#17626b;
+	
+	text-decoration:none;
+	padding:7px 5px 7px 5px;
+}
+
+.dropmenudiv a:hover{ /*THEME CHANGE HERE*/
+/*background-color:#9CD5F2;*/
+background-color:#0972AC;
+font-family:"Trebuchet MS";
+	font-size:11px;
+	/*color:#176268;*/
+	color:#ffffff;
+	
+	text-decoration:none;
+	padding:2px 5px 2px 5px;
+}
+.home_over{
+	background:url(../images/hover.gif) no-repeat center;
+	padding:0px;
+	width:92px;
+	height:44px;}

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DT_JobList" targetNamespace="http://tempuri.org/DT_JobList.xsd" xmlns:mstns="http://tempuri.org/DT_JobList.xsd" xmlns="http://tempuri.org/DT_JobList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DT_JobList" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DT_JobList" msprop:Generator_UserDSName="DT_JobList">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Datatable_JobList" msprop:Generator_TableClassName="Datatable_JobListDataTable" msprop:Generator_TableVarName="tableDatatable_JobList" msprop:Generator_TablePropName="Datatable_JobList" msprop:Generator_RowDeletingName="Datatable_JobListRowDeleting" msprop:Generator_UserTableName="Datatable_JobList" msprop:Generator_RowChangingName="Datatable_JobListRowChanging" msprop:Generator_RowEvHandlerName="Datatable_JobListRowChangeEventHandler" msprop:Generator_RowDeletedName="Datatable_JobListRowDeleted" msprop:Generator_RowEvArgName="Datatable_JobListRowChangeEvent" msprop:Generator_RowChangedName="Datatable_JobListRowChanged" msprop:Generator_RowClassName="Datatable_JobListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JobName" msprop:Generator_ColumnVarNameInTable="columnJobName" msprop:Generator_ColumnPropNameInRow="JobName" msprop:Generator_ColumnPropNameInTable="JobNameColumn" msprop:Generator_UserColumnName="JobName" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientName" msprop:Generator_ColumnVarNameInTable="columnClientName" msprop:Generator_ColumnPropNameInRow="ClientName" msprop:Generator_ColumnPropNameInTable="ClientNameColumn" msprop:Generator_UserColumnName="ClientName" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientGroup" msprop:Generator_ColumnVarNameInTable="columnClientGroup" msprop:Generator_ColumnPropNameInRow="ClientGroup" msprop:Generator_ColumnPropNameInTable="ClientGroupColumn" msprop:Generator_UserColumnName="ClientGroup" type="xs:string" minOccurs="0" />
+              <xs:element name="Staffname" msprop:Generator_ColumnVarNameInTable="columnStaffname" msprop:Generator_ColumnPropNameInRow="Staffname" msprop:Generator_ColumnPropNameInTable="StaffnameColumn" msprop:Generator_UserColumnName="Staffname" type="xs:string" minOccurs="0" />
+              <xs:element name="Approver" msprop:Generator_ColumnVarNameInTable="columnApprover" msprop:Generator_ColumnPropNameInRow="Approver" msprop:Generator_ColumnPropNameInTable="ApproverColumn" msprop:Generator_UserColumnName="Approver" type="xs:string" minOccurs="0" />
+              <xs:element name="TopApprover" msprop:Generator_ColumnVarNameInTable="columnTopApprover" msprop:Generator_ColumnPropNameInRow="TopApprover" msprop:Generator_ColumnPropNameInTable="TopApproverColumn" msprop:Generator_UserColumnName="TopApprover" type="xs:string" minOccurs="0" />
+              <xs:element name="Startdate" msprop:Generator_ColumnVarNameInTable="columnStartdate" msprop:Generator_ColumnPropNameInRow="Startdate" msprop:Generator_ColumnPropNameInTable="StartdateColumn" msprop:Generator_UserColumnName="Startdate" type="xs:string" minOccurs="0" />
+              <xs:element name="Enddate" msprop:Generator_ColumnVarNameInTable="columnEnddate" msprop:Generator_ColumnPropNameInRow="Enddate" msprop:Generator_ColumnPropNameInTable="EnddateColumn" msprop:Generator_UserColumnName="Enddate" type="xs:string" minOccurs="0" />
+              <xs:element name="Billable" msprop:Generator_ColumnVarNameInTable="columnBillable" msprop:Generator_ColumnPropNameInRow="Billable" msprop:Generator_ColumnPropNameInTable="BillableColumn" msprop:Generator_UserColumnName="Billable" type="xs:string" minOccurs="0" />
+              <xs:element name="JobGroup" msprop:Generator_ColumnVarNameInTable="columnJobGroup" msprop:Generator_ColumnPropNameInRow="JobGroup" msprop:Generator_ColumnPropNameInTable="JobGroupColumn" msprop:Generator_UserColumnName="JobGroup" type="xs:string" minOccurs="0" />
+              <xs:element name="jobStatus" msprop:Generator_ColumnVarNameInTable="columnjobStatus" msprop:Generator_ColumnPropNameInRow="jobStatus" msprop:Generator_ColumnPropNameInTable="jobStatusColumn" msprop:Generator_UserColumnName="jobStatus" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

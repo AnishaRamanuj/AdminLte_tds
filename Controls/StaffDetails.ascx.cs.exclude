@@ -1,0 +1,73 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.Sql;
+using System.Data.SqlClient;
+using Microsoft.ApplicationBlocks1.Data;
+using System.Globalization;
+using System.Data;
+using Microsoft.Reporting.WebForms;
+using System.Text;
+
+public partial class controls_StaffDetails : System.Web.UI.UserControl
+{
+    LabelAccess objlabelAccess = new LabelAccess();
+    List<CommonLibrary.tbl_LabelAccess> LtblAccess;
+    public static SqlConnection sqlConn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["ConnectionString"].ToString());
+    public static CultureInfo ci = new CultureInfo("en-GB");
+    string UserType = "";
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            if (Session["companyid"] != null)
+            {
+                hdnCompid.Value = Session["companyid"].ToString();
+                ViewState["compid"] = Session["companyid"].ToString();
+            }
+            else if (Session["staffid"] != null)
+            {
+                hdnCompid.Value = Session["cltcomp"].ToString();
+                ViewState["compid"] = Session["cltcomp"].ToString();
+            }
+            else
+            {
+                Response.Redirect("~/Default.aspx");
+            }
+            DateTime date = DateTime.Now;
+
+            DateTime firstDayOfMonth = new DateTime(date.Year, date.Month, 1);
+            DateTime lastDayOfMonth = firstDayOfMonth.AddMonths(1).AddDays(-1);
+
+            txtstartdate1.Text = firstDayOfMonth.ToString("dd/MM/yyyy");
+            txtenddate2.Text = lastDayOfMonth.ToString("dd/MM/yyyy");
+        }
+        txtstartdate1.Attributes.Add("onkeyup", "CountFrmTitle(this,11);");
+        txtenddate2.Attributes.Add("onkeyup", "CountFrmTitle(this,11);");
+
+        if (Session["Error"].ToString() != "")
+        {
+            MessageControl1.SetMessage("No Record Found..", MessageDisplay.DisplayStyles.Error);
+            Session["Error"] = "";
+        }
+    }
+
+    protected void btngen_Click(object sender, EventArgs e)
+    {
+        Session["staffid"] = hdnSelectedStaff.Value;
+        Session["frdate"] = txtstartdate1.Text.Trim();
+        Session["todate"] = txtenddate2.Text.Trim();
+
+        if (hdnSelectedStaff.Value == "")
+        {
+            MessageControl1.SetMessage("Please Select At Least One Staff..", MessageDisplay.DisplayStyles.Error);
+        }
+        else
+        {
+            Response.Redirect("~/Company/StaffProjectDetails_rpt.aspx", false);
+        }
+    }
+}

@@ -1,0 +1,96 @@
+*{ margin:0;
+padding:0;}
+body{ font-family:Verdana,Arial,Helvetica,sans-serif;
+		font-size:11px;
+		font-weight:normal;
+	    color:#000000;
+	    }
+/*.login_box{ width:903px; height:auto; margin:0 auto;  background:url(images/bg_cen_login.jpg) repeat-y;  }
+.login1{ width:1200px; height:auto; float:left; margin-left:25px;}
+.login1_top{ width:1200px; height:33px; float:left; background: url(../images/companydetails_bg.jpg) no-repeat;}
+.login1_cen{ width:1200px; height:200px; float:left; background: url(../images/com_details_bg_cen.jpg) repeat-y;}
+.login1_btm{ width:1200px; height:13px; float:left; }
+.clearall{ clear:both;}
+
+.login2_box{ width:1200px; height:auto; float:left; margin-left:25px;  padding:30px 0px 0px 0px;}
+.account_left{ width:397px; height:270px; float:left; }
+.account_top{ width:397px; height:33px; float:left; background: url(../images/account_bg.jpg)  no-repeat;}
+.account_cen{ width:397px; height:200px; float:left; background:url(../images/account_bg_cen.jpg)  repeat-y;}
+.account_btm{ width:397px; height:15px; float:left; background: url(../images/account_bg_btm.jpg) repeat-y;}
+
+
+.personal_left{ width:397px; height:270px; float:left; padding-left:55px; }
+.personal_top{ width:397px; height:33px; float:left; background: url(../images/account_bg.jpg)  no-repeat;}
+.personal_cen{ width:397px; height:200px; float:left; background:url(../images/account_bg_cen.jpg)  repeat-y;}
+.personal_btm{ width:397px; height:15px; float:left; background: url(../images/account_bg_btm.jpg) repeat-y;}*/
+
+
+.login_boxcomp{ width:1200px; height:auto; margin-left:15px; }
+.login1{ width:1200px; height:auto; float:left; margin-left:25px;}
+.logincomp{ width:1200px; height:auto; float:left; margin-left:10px;padding-top:15px;}
+.login1_top{ width:1200px; height:59px; float:left; background: url(../images/companydetails_bg.jpg) no-repeat;}
+.login1_cen{ width:1200px; height: auto; float:left; background: url(../images/com_details_bg_cen.jpg) repeat-y;}
+.login1_btm{ width:1200px; height:13px; float:left; }
+.clearall{ clear:both;}
+
+.login2_box{ width:1200px; height:auto; float:left; margin-left:25px;  padding:30px 0px 0px 0px;}
+.account_left{ width:450px; height: auto; float:left; }
+.account_top{ width:397px; height:59px; float:left; background: url(../images/account_bg.jpg)  no-repeat;}
+.account_cen{ width:553px; height: auto; float:left; border-left:1px solid #2196dc; border-right:1px solid #2196dc;  }
+.account_censtf{ width:395px; height: 140px; float:left; border-left:1px solid #2196dc; border-right:1px solid #2196dc;  }
+.account_btm{ width:560px; height:15px; float:left; }
+
+.login3_box{ height:auto; float:left; margin-left:0px;  padding: 15px 0px 20px 0px;}
+.login3_boxcomp{ width:1200px; height:auto; float:left; margin-left:10px;  padding:0px 0px 0px 0px;}
+
+.personal_right{ width:300px; height: auto; float:left; padding-left:5px; }
+.personal_top{ width:397px; height:59px; float:left; background: url(../images/account_bg.jpg)  no-repeat;}
+.personal_cen{ width:397px; height: auto; float:left; background:url(../images/account_bg_cen.jpg)  repeat-y;}
+.personal_btm{ width:397px; height:15px; float:left; background: url(../images/account_bg_btm.jpg) repeat-y;}
+
+
+.table_0{ width:1200px;height:55px; float:left;
+}
+.table_comp{ width:100%;height:55px; float:left;
+}
+/*.table_1{ width:485px; height:185px; float:left;}
+.table_2{ width:340px; height:185px; float:left; padding-left:10px;}
+.table_3{ width:380px; height:185px; float:left; padding-left:0px;}
+.table_4{ width:380px; height:185px; float:left; padding-left:0px;}
+.table_text{ font-family:"Trebuchet MS", "Times New Roman", Arial; font-size:14px; color:#000; font-weight:bold;}*/
+.table_1{ width:485px; height: auto; float:left;}
+.table_2{ width:340px; height: auto; float:left; padding-left:10px;}
+.table_3{ width:460px; height: auto; float:left; padding-left:0px;}
+.table_5left_box{ width:100%; height: auto; float:left; padding-left:0px;}
+.table_4{ width:380px; height: auto; float:left; padding-left:0px;}
+.table_text{ font-family:"Trebuchet MS", "Times New Roman", Arial; font-size:14px; color:#000; font-weight:bold;}
+
+
+.image{ width:60px; height:50px; float:left;  margin:0px 0px 0px 5px; }
+.image1{ width:40px; height:30px; float:left;  margin:0px 0px 0px 5px;padding:10px 0px 0px 0px; }
+.img_head{ width:200px; height: auto; float:left; font-family:"Trebuchet MS", "Times New Roman", Arial; font-size:14px; color:#FFFFFF; padding:20px 0px 0px 0px; font-weight:bold;}
+.img_head1{ width:200px; height: auto; float:left; font-family:"Trebuchet MS", "Times New Roman", Arial; font-size:15px; color:#FFFFFF; padding:20px 0px 0px 0px;}
+
+
+/*-----------------login company--------------------*/
+.bg_account_top{ width:560px; height:56px; float:left;  }
+.bg2_account_top{ width:300px; height:56px; float:left;  }
+
+.bg_head{ width:212px; height:56px; float:left; background: url(../images/blue_bg.jpg) no-repeat;}
+.bg_cen{width:330px; height:56px; float:left; background: url(../images/top_cen.jpg) repeat-x; position:relative;}
+.bg_right{width:13px; height:56px; float:left; background: url(../images/top_r_con.jpg) no-repeat;}
+
+.right_cen{width:50px; height:56px; float:left; background: url(../images/top_cen.jpg) repeat-x; position:relative;}
+.bg2_right{width:13px; height:56px; float:left; background: url(../images/top_r_con.jpg) no-repeat;}
+.rht_account_cen{ width:273px; height: auto; float:left; border-left:1px solid #2196dc; border-right:1px solid #2196dc;  }
+.ac1_btm_cen{ width:249px; height:9px; float:left; background:url(../images/bottom_cen.jpg) repeat-x; }
+.account1_btm{ width:300px; height:15px; float:left; }
+
+.bg_head1{ width:212px; height:56px; float:left; background: url(../images/blue_bg.jpg) no-repeat;}
+.image1{ width:60px; height:36px; float:left;  margin:0px 0px 0px 5px; }
+/*.img_head1{ width:200px; height: auto; float:left; font-family:"Trebuchet MS", "Times New Roman", Arial; font-size:14px; color:#FFFFFF; padding:20px 0px 0px 0px; font-weight:bold; position:absolute;  right:250px; left:800px; }*/
+.img_head1{ width:120px; height: auto; float:left; font-family:"Trebuchet MS", "Times New Roman", Arial; font-size:15px; color:#FFFFFF; padding:20px 0px 0px 0px;}
+
+.ac_btm_left{ width:13px; height:9px; float:left; background:url(../images/bottom_left.jpg) no-repeat; }
+.ac_btm_cen{ width:529px; height:9px; float:left; background:url(../images/bottom_cen.jpg) repeat-x; }
+.ac_btm_right{ width:13px; height:9px; float:left;  }

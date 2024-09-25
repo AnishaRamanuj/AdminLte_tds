@@ -1,0 +1,55 @@
+*{ margin:0;
+padding:0;}
+body{ font-family:"Trebuchet MS", "Times New Roman", Arial; font-size:12px;}
+.login_box{ width:903px; height:auto; margin:0 auto;  background:url(../images/bg_cen_login.jpg) repeat-y;  }
+.login1{ width:825px; height:auto; float:left; margin-left:25px;}
+.login1_top{ width:850px; height:59px; float:left; background: url(../images/companydetails_bg.jpg) no-repeat;}
+.login1_cen{ width:850px; height: auto; float:left; background: url(../images/com_details_bg_cen.jpg) repeat-y;}
+.login1_btm{ width:850px; height:13px; float:left; }
+.clearall{ clear:both;}
+
+.login2_box{ width:850px; height:auto; float:left; margin-left:25px;  padding:30px 0px 0px 0px;}
+.account_left{ width:470px; height: auto; float:left; }
+.account_top{ width:397px; height:59px; float:left; background: url(../images/account_bg.jpg)  no-repeat;}
+.account_cen{ width:453px; height: auto; float:left; border-left:1px solid #2196dc; border-right:1px solid #2196dc;  }
+.account_btm{ width:460px; height:15px; float:left; }
+
+.login3_box{ width:880px; height:auto; float:left; margin-left:15px;  padding:0px 0px 0px 0px;}
+
+.personal_right{ width:350px; height: auto; float:left; padding-left:20px; }
+.personal_top{ width:397px; height:59px; float:left; background: url(../images/account_bg.jpg)  no-repeat;}
+.personal_cen{ width:397px; height: auto; float:left; background:url(../images/account_bg_cen.jpg)  repeat-y;}
+.personal_btm{ width:397px; height:15px; float:left; background: url(../images/account_bg_btm.jpg) repeat-y;}
+
+.table_1{ width:485px; height: auto; float:left;}
+.table_2{ width:340px; height: auto; float:left; padding-left:10px;}
+.table_3{ width:460px; height: auto; float:left; padding-left:0px;}
+.table_4{ width:380px; height: auto; float:left; padding-left:0px;}
+.table_text{ font-family:"Trebuchet MS", "Times New Roman", Arial; font-size:14px; color:#000; font-weight:bold;}
+
+
+.image{ width:60px; height:36px; float:left;  margin:0px 0px 0px 5px; }
+.img_head{ width:200px; height: auto; float:left; font-family:"Trebuchet MS", "Times New Roman", Arial; font-size:14px; color:#FFFFFF; padding:20px 0px 0px 0px; font-weight:bold; position:absolute; left:315px; right:100px; }
+
+
+/*-----------------login company--------------------*/
+.bg_account_top{ width:470px; height:56px; float:left;  }
+.bg2_account_top{ width:400px; height:56px; float:left;  }
+
+.bg_head{ width:212px; height:56px; float:left; background: url(../images/blue_bg.jpg) no-repeat;}
+.bg_cen{width:230px; height:56px; float:left; background: url(../images/top_cen.jpg) repeat-x; position:relative;}
+.bg_right{width:13px; height:56px; float:left; background: url(../images/top_r_con.jpg) no-repeat;}
+
+.right_cen{width:150px; height:56px; float:left; background: url(../images/top_cen.jpg) repeat-x; position:relative;}
+.bg2_right{width:13px; height:56px; float:left; background: url(../images/top_r_con.jpg) no-repeat;}
+.rht_account_cen{ width:373px; height: auto; float:left; border-left:1px solid #2196dc; border-right:1px solid #2196dc;  }
+.ac1_btm_cen{ width:349px; height:9px; float:left; background:url(../images/bottom_cen.jpg) repeat-x; }
+.account1_btm{ width:380px; height:15px; float:left; }
+
+.bg_head1{ width:212px; height:56px; float:left; background: url(../images/blue_bg.jpg) no-repeat;}
+.image1{ width:60px; height:36px; float:left;  margin:0px 0px 0px 5px; }
+.img_head1{ width:200px; height: auto; float:left; font-family:"Trebuchet MS", "Times New Roman", Arial; font-size:14px; color:#FFFFFF; padding:20px 0px 0px 0px; font-weight:bold; position:absolute;  right:250px; left:800px; }
+
+.ac_btm_left{ width:13px; height:9px; float:left; background:url(../images/bottom_left.jpg) no-repeat; }
+.ac_btm_cen{ width:429px; height:9px; float:left; background:url(../images/bottom_cen.jpg) repeat-x; }
+.ac_btm_right{ width:13px; height:9px; float:left;  }

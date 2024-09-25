@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DT_ClientGroup" targetNamespace="http://tempuri.org/DT_ClientGroup.xsd" xmlns:mstns="http://tempuri.org/DT_ClientGroup.xsd" xmlns="http://tempuri.org/DT_ClientGroup.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DT_ClientGroup" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DT_ClientGroup" msprop:Generator_UserDSName="DT_ClientGroup">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable_ClientGroup" msprop:Generator_TableClassName="DataTable_ClientGroupDataTable" msprop:Generator_TableVarName="tableDataTable_ClientGroup" msprop:Generator_TablePropName="DataTable_ClientGroup" msprop:Generator_RowDeletingName="DataTable_ClientGroupRowDeleting" msprop:Generator_UserTableName="DataTable_ClientGroup" msprop:Generator_RowChangingName="DataTable_ClientGroupRowChanging" msprop:Generator_RowEvHandlerName="DataTable_ClientGroupRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable_ClientGroupRowDeleted" msprop:Generator_RowEvArgName="DataTable_ClientGroupRowChangeEvent" msprop:Generator_RowChangedName="DataTable_ClientGroupRowChanged" msprop:Generator_RowClassName="DataTable_ClientGroupRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClientGroup" msprop:Generator_ColumnVarNameInTable="columnClientGroup" msprop:Generator_ColumnPropNameInRow="ClientGroup" msprop:Generator_ColumnPropNameInTable="ClientGroupColumn" msprop:Generator_UserColumnName="ClientGroup" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientName" msprop:Generator_ColumnVarNameInTable="columnClientName" msprop:Generator_ColumnPropNameInRow="ClientName" msprop:Generator_ColumnPropNameInTable="ClientNameColumn" msprop:Generator_UserColumnName="ClientName" type="xs:string" minOccurs="0" />
+              <xs:element name="JobName" msprop:Generator_ColumnVarNameInTable="columnJobName" msprop:Generator_ColumnPropNameInRow="JobName" msprop:Generator_ColumnPropNameInTable="JobNameColumn" msprop:Generator_UserColumnName="JobName" type="xs:string" minOccurs="0" />
+              <xs:element name="Hours1" msprop:Generator_ColumnVarNameInTable="columnHours1" msprop:Generator_ColumnPropNameInRow="Hours1" msprop:Generator_ColumnPropNameInTable="Hours1Column" msprop:Generator_UserColumnName="Hours1" type="xs:string" minOccurs="0" />
+              <xs:element name="Ope" msprop:Generator_ColumnVarNameInTable="columnOpe" msprop:Generator_ColumnPropNameInRow="Ope" msprop:Generator_ColumnPropNameInTable="OpeColumn" msprop:Generator_UserColumnName="Ope" type="xs:string" minOccurs="0" />
+              <xs:element name="Charges" msprop:Generator_ColumnVarNameInTable="columnCharges" msprop:Generator_ColumnPropNameInRow="Charges" msprop:Generator_ColumnPropNameInTable="ChargesColumn" msprop:Generator_UserColumnName="Charges" type="xs:string" minOccurs="0" />
+              <xs:element name="Chargeope" msprop:Generator_ColumnVarNameInTable="columnChargeope" msprop:Generator_ColumnPropNameInRow="Chargeope" msprop:Generator_ColumnPropNameInTable="ChargeopeColumn" msprop:Generator_UserColumnName="Chargeope" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

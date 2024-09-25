@@ -1,0 +1,237 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs"
+    Inherits="Admin_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>:: JTMS ::</title>
+    <link href="../StyleCss/Style11.css" rel="stylesheet" type="text/css" />
+    <link href="../StyleCss/StyleSheet.css" rel="stylesheet" type="text/css" />
+
+    <link href="../StyleCss/masterpage11.css" rel="stylesheet" type="text/css" />
+
+    <link href="../StyleCss/login.css" rel="stylesheet" type="text/css" />
+
+    <script src="../jquery/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+        function liname() {
+
+            var name = window.location.search.substring(1);
+
+            if (name == "desig=1") {
+
+                var des = document.getElementById('desg');
+                des.className = "selected";
+            }
+            if (name == "dep=1") {
+
+                var des = document.getElementById('dep');
+                des.className = "selected";
+            }
+            if (name == "br=1") {
+
+                var des = document.getElementById('br');
+                des.className = "selected";
+            }
+            if (name == "ope=1") {
+
+                var des = document.getElementById('ope');
+                des.className = "selected";
+            }
+            if (name == "loc=1") {
+
+                var des = document.getElementById('loc');
+                des.className = "selected";
+            }
+            if (name == "nar=1") {
+
+                var des = document.getElementById('nar');
+                des.className = "selected";
+            }
+            if (name == "jg=1") {
+
+                var des = document.getElementById('jg');
+                des.className = "selected";
+            }
+            if (name == "cg=1") {
+
+                var des = document.getElementById('cg');
+                des.className = "selected";
+            }
+            if (name == "part=1") {
+
+                var des = document.getElementById('part');
+                des.className = "selected";
+            }
+            if (name == "cl=1") {
+
+                var des = document.getElementById('cl');
+                des.className = "selected";
+            }
+            if (name == "job=1") {
+
+                var des = document.getElementById('job');
+                des.className = "selected";
+            }
+        }
+
+        function Hideloaderfromcode()
+        { $('.modalganesh').css("display", "none"); }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .modalganesh
+        {
+            position: fixed;
+            z-index: 999;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            background-color: Black;
+            filter: alpha(opacity=40);
+            opacity: 0.6;
+            -moz-opacity: 0.8;
+        }
+        .centerganesh
+        {
+            z-index: 1000;
+            margin: 400px auto;
+            padding: 10px;
+            width: 200px;
+            background-color: White;
+            border-radius: 10px;
+            filter: alpha(opacity=100);
+            opacity: 1;
+            -moz-opacity: 1;
+        }
+        .centerganesh img
+        {
+            background-color: Black;
+            width: 200px;
+        }
+    </style>
+</head>
+<body onload="liname();">
+    <div class="modalganesh">
+        <div class="centerganesh">
+            <img alt="loadting" src="../images/progress-indicator.gif" />
+        </div>
+    </div>
+    <form id="form1" runat="server">
+    <script type="text/javascript">
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+        //Raised before processing of an asynchronous postback starts and the postback request is sent to the server.
+        prm.add_beginRequest(BeginRequestHandler);
+        // Raised after an asynchronous postback is finished and control has been returned to the browser.
+        prm.add_endRequest(EndRequestHandler);
+
+        // prm.add_pageLoaded(BeginRequestHandler);
+        //   prm.remove_pageLoaded(EndRequestHandler);
+
+        function BeginRequestHandler(sender, args) {
+            //Shows the modal popup - the update progress
+            $('.modalganesh').css("display", "block");
+            $('.modalganesh').fadeIn(0);
+        }
+
+        function EndRequestHandler(sender, args) {
+            //Hide the modal popup - the update progress
+            $('.modalganesh').css("display", "none");
+        }
+
+    </script>
+    <div class="main">
+        <div class="top">
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+            <div class="header" visible="false">
+                <a href="AdminHome.aspx" class="lnkstle">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a
+                    href="http://www.timesheet.co.in/timesheet-about-us.html"
+                    class="lnkstle"> About Us</a>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;
+                <a href="http://www.timesheet.co.in/contactus.aspx" class="lnkstle">
+                    Contact Us&nbsp;</a></div>
+            <div class="login_img">
+                <asp:ImageButton ID="lnklogin" runat="server" OnClick="lnklogin_Click"
+                    ImageUrl="../images/logout2.jpg"></asp:ImageButton></div>
+            <div class="top_box">
+                <div class="topbg">
+                </div>
+                <div class="topbg2">
+                    <div class="logo">
+                        <img src="../images/JTMS_logo1.jpg" /></div>
+                    <div class="login_btn" style="float: right">
+                        <asp:Label ID="ltrMaster" runat="server" Text="" CssClass="Head6"></asp:Label></div>
+                    <div class="welcome" style="text-align: right;">
+                        <asp:LinkButton ID="lblSession" runat="server" CssClass="masterLinks2"
+                            Font-Underline="False" OnClick="lblSession_Click"></asp:LinkButton></div>
+                    <div class="welcome1" style="text-align: right;">
+                        <asp:Label ID="lblrole" runat="server" Text="User : SuperAdmin"
+                            CssClass="masterLinks2"></asp:Label></div>
+                    <div class="clearall">
+                    </div>
+                    <div id="ddtopmenubar" class="mattblackmenu">
+                        <ul>
+                            <li><a href="AdminHome.aspx">Home</a></li>
+                            <li><a href="#" rel="productmenu1">Masters</a></li>
+                            <li><a href="#" rel="productmenu4">Utility</a></li>
+                        </ul>
+                    </div>
+                    <script type="text/javascript">
+                        ddlevelsmenu.setup("ddtopmenubar", "topbar") //ddlevelsmenu.setup("mainmenuid", "topbar|sidebar")
+                    </script>
+
+                    <ul id="productmenu1" class="ddsubmenustyle">
+                        <li><a href="AddRecords.aspx?desig=1">Designation</a></li>
+                        <li><a href="AddRecords.aspx?dep=1">Department</a></li>
+                        <li><a href="AddRecords.aspx?br=1">Branch</a></li>
+                        <li><a href="ad_ManageStaff.aspx?part=1">Partner/Staff</a></li>
+                        <li><a href="ad_Manageclient.aspx?cl=1">Client</a></li>
+                        <li><a href="ad_Managejob.aspx?job=1">Job</a></li>
+                        <li><a href="AddRecords.aspx?ope=1">Ope</a></li>
+                        <li><a href="AddRecords.aspx?loc=1">Location</a></li>
+                        <li><a href="AddRecords.aspx?nar=1">Narration</a></li>
+                        <li><a href="AddRecords.aspx?jg=1">Job Group</a></li>
+                        <li><a href="AddRecords.aspx?cg=1">Client Group</a></li>
+                    </ul>
+                    <ul id="productmenu4" class="ddsubmenustyle">
+                        <li><a href="MangePageLinks.aspx">Manage Pages</a> </li>
+                        <li><a href="ManagePermission.aspx">Manage Permission</a> </li>
+                        <li><a href="Admin_Password.aspx">Change Password</a></li>
+                        <li><a href="pagemenumaster.aspx">Add New ASPX Pages</a></li>
+                        <li><a href="MenuGroupMaster.aspx">Add New Group For Menu</a></li>
+                        <li><a href="superAdmincompanypagesright.aspx">Manage Permission</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="clearall">
+        </div>
+        <div class="login_box">
+            <div class="login3_box">
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                    <ContentTemplate>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+                <div class="clearall">
+                </div>
+            </div>
+            <!--login-->
+            <div class="clearall">
+            </div>
+        </div>
+        <div class="bottom" style="padding-left: 10px; padding-top: 17px">
+            <asp:Label ID="Label1" runat="server" Text="" CssClass="labelstyle"
+                ForeColor="White"></asp:Label></div>
+        <div class="clearall">
+        </div>
+    </div>
+    </form>
+    <script type="text/javascript">
+        //	  active_swap();
+    </script>
+</body>
+</html>

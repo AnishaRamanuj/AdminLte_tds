@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<xs:schema id="ClientAssignment" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ClientAssignment" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ReportTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OPEName" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientName" type="xs:string" minOccurs="0" />
+              <xs:element name="MJobName" type="xs:string" minOccurs="0" />
+              <xs:element name="StaffName" type="xs:string" minOccurs="0" />
+              <xs:element name="Srno" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalSub" type="xs:string" minOccurs="0" />
+              <xs:element name="Hours1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Charges" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Ope" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Jobid" type="xs:int" minOccurs="0" />
+              <xs:element name="Clientid" type="xs:int" minOccurs="0" />
+              <xs:element name="Staffid" type="xs:int" minOccurs="0" />
+              <xs:element name="Compid" type="xs:int" minOccurs="0" />
+              <xs:element name="RptName" type="xs:string" minOccurs="0" />
+              <xs:element name="Usr" type="xs:string" minOccurs="0" />
+              <xs:element name="OpeId" type="xs:int" minOccurs="0" />
+              <xs:element name="BudHours" type="xs:decimal" minOccurs="0" />
+              <xs:element name="budAmt" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="tbl_Team" targetNamespace="http://tempuri.org/tbl_Team.xsd" xmlns:mstns="http://tempuri.org/tbl_Team.xsd" xmlns="http://tempuri.org/tbl_Team.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="tbl_Team" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="tbl_Team" msprop:Generator_UserDSName="tbl_Team">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dt_Team" msprop:Generator_TableClassName="dt_TeamDataTable" msprop:Generator_TableVarName="tabledt_Team" msprop:Generator_TablePropName="dt_Team" msprop:Generator_RowDeletingName="dt_TeamRowDeleting" msprop:Generator_RowChangingName="dt_TeamRowChanging" msprop:Generator_RowEvHandlerName="dt_TeamRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_TeamRowDeleted" msprop:Generator_UserTableName="dt_Team" msprop:Generator_RowChangedName="dt_TeamRowChanged" msprop:Generator_RowEvArgName="dt_TeamRowChangeEvent" msprop:Generator_RowClassName="dt_TeamRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sino" msprop:Generator_ColumnVarNameInTable="columnSino" msprop:Generator_ColumnPropNameInRow="Sino" msprop:Generator_ColumnPropNameInTable="SinoColumn" msprop:Generator_UserColumnName="Sino" type="xs:string" minOccurs="0" />
+              <xs:element name="DepartmentName" msprop:Generator_ColumnVarNameInTable="columnDepartmentName" msprop:Generator_ColumnPropNameInRow="DepartmentName" msprop:Generator_ColumnPropNameInTable="DepartmentNameColumn" msprop:Generator_UserColumnName="DepartmentName" type="xs:string" minOccurs="0" />
+              <xs:element name="Staffcount" msprop:Generator_ColumnVarNameInTable="columnStaffcount" msprop:Generator_ColumnPropNameInRow="Staffcount" msprop:Generator_ColumnPropNameInTable="StaffcountColumn" msprop:Generator_UserColumnName="Staffcount" type="xs:string" minOccurs="0" />
+              <xs:element name="Totaltime" msprop:Generator_ColumnVarNameInTable="columnTotaltime" msprop:Generator_ColumnPropNameInRow="Totaltime" msprop:Generator_ColumnPropNameInTable="TotaltimeColumn" msprop:Generator_UserColumnName="Totaltime" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,225 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="StaffDetails.ascx.cs" Inherits="controls_StaffDetails" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+    Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
+<%@ Register Src="MessageControl.ascx" TagName="MessageControl" TagPrefix="uc2" %>
+<link href="../StyleCss/TimesheetInput.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../jquery/jquery-1.8.2.min.js"></script>
+
+<script lang="javascript" type="text/javascript">
+    $(document).ready(function () {
+        $(document).ajaxStart(function () { $(".modalganesh").show(); }).ajaxStop(function () { $(".modalganesh").hide(); });
+
+        BindPageLoadData();
+        pageFiltersReset();
+
+        $("[id*=chkStaff]").on("click", function () {
+            if ($(".clStaff").length == 0)
+            { return false; }
+            var check = $(this).attr('checked');
+            $(".clStaff").each(function () {
+                if (check)
+                { $(this).attr('checked', 'checked'); }
+                else {
+                    $(this).removeAttr('checked');
+                }
+            });
+            GetAllSelected();
+        });
+
+        $("[id*=txtstartdate1]").on("change", function () {
+            BindPageLoadData();
+
+        });
+
+        $("[id*=txtenddate2]").on("change", function () {
+            BindPageLoadData();
+        });
+
+    });
+
+    function BindPageLoadData() {
+        if ($("[id*=txtstartdate1]").val() == "" || $("[id*=txtstartdate1]").val() == undefined)
+        { return false; }
+        $('.loader').show();
+        var compid = $("[id*=hdnCompid]").val();
+        var Fdate = $("[id*=txtstartdate1]").val();
+        var todate = $("[id*=txtenddate2]").val();
+        var calala = $.ajax({
+            type: "POST",
+            url: "../Handler/WS_StaffDetails.asmx/Get_Staff_List",
+            data: "{compid:'"+compid+"', Fdate:'" + Fdate + "', todate:'" + todate + "'}",
+            dataType: 'json',
+            contentType: "application/json",
+            success: OnSuccess,
+            failure: function (response) {
+                alert('Cant Connect to Server' + response.d);
+            },
+            error: function (response) {
+                alert('Error Occoured ' + response.d);
+            }
+        });
+        //$.ajax({
+        //    type: "POST",
+        //    contentType: "application/json; charset=utf-8",
+        //    url: "../Handler/WS_StaffDetails.asmx/Get_Staff_List",
+        //    data: "{compid:' + compid + ', Fdate:'" + Fdate + "', todate:'"+ todate +"'}",
+        //    dataType: "json",
+        //    success: OnSuccess,
+        //    failure: function (response) {
+        //    },
+        //    error: function (response) {
+        //    }
+        //});
+       
+    }
+
+    function OnSuccess(response) {
+        var obj = jQuery.parseJSON(response.d);
+        //if (obj == 0) {
+        //    alert("No Record Found");
+        //}
+        console.log(obj);
+        var tableRowsStaff = '';
+        var countStaff = 0;
+        $.each(obj, function (i, vl) {
+            if (vl.Type == "Staff") {
+                countStaff += 1;
+                tableRowsStaff += "<tr><td><input type='checkbox' onclick='singlestaffcheck()' class='cl" + vl.Type + "' value='" + vl.id + "' /></td><td>" + vl.PNAME + "</td></tr>";
+            }
+        });
+        $("[id*=chkStaff]").removeAttr('checked');
+        $("[id*=chkStaff]").parent().find('label').text("Staff (" + countStaff + ")");
+        $("[id*=Panel1]").html("<table>" + tableRowsStaff + "</table>");
+
+        $(".modalganesh").hide();
+        GetAllSelected();
+    }
+
+    function singlestaffcheck() {
+        if ($(".clStaff").length == $(".clStaff:checked").length)
+        { $("[id*=chkStaff]").attr('checked', true); }
+        else { $("[id*=chkStaff]").removeAttr('checked'); }
+        GetAllSelected();
+    }
+
+    function pageFiltersReset() {
+        $("[id*=chkStaff]").removeAttr('checked');
+        $("[id*=chkStaff]").parent().find('label').text("Staff (0)");
+        $("[id*=Panel1]").html('');
+        BindPageLoadData();
+    }
+
+    function GetAllSelected() {
+        var selectStaff = '';
+        $(".clStaff:checked").each(function () {
+            selectStaff += $(this).val() + ',';
+        });
+        $("[id*=hdnSelectedStaff]").val(selectStaff);
+    }
+</script>
+<style type="text/css">
+    .cssPageTitle {
+        font: bold 14px verdana, arial, "Trebuchet MS", sans-serif;
+        border-bottom: 2px solid #0b9322;
+        /*padding: 7px;*/
+        color: #0b9322;
+    }
+
+    .cssButton {
+        cursor: pointer; /*background-image: url(../Images/ButtonBG1.png);*/
+        background-color: #d3d3d3;
+        border: 0px;
+        padding: 4px 15px 4px 15px;
+        color: Black;
+        border: 1px solid #c4c5c6;
+        border-radius: 3px;
+        font: bold 12px verdana, arial, "Trebuchet MS", sans-serif;
+        text-decoration: none;
+        opacity: 0.8;
+    }
+
+    .cssPageTitle2 {
+        font: bold 14px verdana, arial, "Trebuchet MS", sans-serif;
+        /*border-bottom: 2px solid #0b9322;*/
+        padding: 7px;
+        color: #0b9322;
+    }
+</style>
+<div>
+    <asp:HiddenField ID="hdnCompid" runat="server" />
+    <asp:HiddenField ID="hdnstaffcode" runat="server" />
+    <asp:HiddenField id="hdnSelectedStaff" runat="server"/>
+
+
+    <table style="width: 100%" class="cssPageTitle">
+        <tr>
+            <td class="cssPageTitle2">
+                <asp:Label ID="Label1" runat="server" Style="margin-left: 50px;" Text="Staffwise Project Report"></asp:Label>
+            </td>
+            <td style="float: right; padding-top: 5px; margin-left: 60px;">
+                <asp:Button ID="btngen" runat="server"
+                    CssClass="cssButton" Text="Generate Report" OnClick="btngen_Click" />
+            </td>
+        </tr>
+    </table>
+    <div style="width: 100%;">
+        <uc2:MessageControl ID="MessageControl1" runat="server" />
+    </div>
+    <div class="row_report" runat="server" id="divReportInput">
+        <div>
+             <table style="padding-top: 10px;">
+                <tr>
+                    <td style="padding-bottom: 400px;">
+                        <asp:Label ID="Label11" runat="server" ForeColor="Black" Style="margin-left: 60px;" Text="From" Font-Bold="True"></asp:Label>
+                    </td>
+                    <td style="padding-bottom: 400px;" align="center" valign="middle">:
+                    </td>
+                    <td style="padding-bottom: 400px;">
+                        <asp:TextBox ID="txtstartdate1" runat="server" CssClass="texboxcls"></asp:TextBox>
+                        <asp:Image ID="Img1" runat="server" ImageUrl="~/images/calendar.png" />
+                        <asp:Label ID="Label5" runat="server" CssClass="errlabelstyle" ForeColor="Red" Text=""></asp:Label>
+                        <cc1:CalendarExtender ID="Calendarextender3" runat="server" TargetControlID="txtstartdate1"
+                            PopupButtonID="Img1" Format="dd/MM/yyyy">
+                        </cc1:CalendarExtender>
+                    </td>
+                    <td style="width: 20px;"></td>
+                    <td style="padding-bottom: 400px;">
+                        <asp:Label ID="Label4" runat="server" ForeColor="Black" Text="To" Font-Bold="True"></asp:Label>
+                    </td>
+                    <td style="padding-bottom: 400px;" align="center" valign="middle">:
+                    </td>
+                    <td style="padding-bottom: 400px;">
+                        <asp:TextBox ID="txtenddate2" runat="server" CssClass="texboxcls"></asp:TextBox>
+                        <asp:Image ID="Img2" runat="server" ImageUrl="~/images/calendar.png" />
+                        <asp:Label ID="Label7" runat="server" CssClass="errlabelstyle" ForeColor="Red" Text=""></asp:Label>
+                        <cc1:CalendarExtender ID="Calendarextender4" runat="server" TargetControlID="txtenddate2"
+                            PopupButtonID="Img2" Format="dd/MM/yyyy">
+                        </cc1:CalendarExtender>
+                    </td>   
+                    <td>
+                                 <table class="style1" style="float: left; padding-left: 50px; padding-top: 5px;">
+                <tr>
+                    <td>
+                        <table align="center">
+                            <tr>
+                                <td style="width: 380px;">
+                                    <asp:CheckBox ID="chkStaff" runat="server" ForeColor="Black"
+                                        Font-Bold="true" Height="20px" Text="Staff (0)" CssClass="labelChange" />
+
+                                    <div id="Panel1" style="border: 1px solid #B6D1FB; width: 350px; height: 450px; overflow: auto; margin-top: 8px;">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+                    </td>                 
+                </tr>
+
+            </table>
+   
+        </div>
+    </div>
+</div>

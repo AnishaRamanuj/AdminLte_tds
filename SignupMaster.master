@@ -1,0 +1,153 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SignupMaster.master.cs" Inherits="SignupMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>:: JTMS ::</title>
+    <link href="css/style_signup.css" rel="stylesheet" type="text/css" />
+    <script src="jquery/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function Hideloaderfromcode()
+{ $('.modalganesh').css("display", "none"); }
+//-->
+</script>
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+
+.style20 {font-size: small}
+.style21 {
+	color: #FFFFFF;
+	font-size: 14px;
+}
+.style22 {color: #990000}
+.style24 {color: #FFFFFF}
+
+
+        .modalganesh
+        {
+            position: fixed;
+            z-index: 999;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            background-color: Black;
+            filter: alpha(opacity=40);
+            opacity: 0.6;
+            -moz-opacity: 0.8;
+        }
+        .centerganesh
+        {
+            z-index: 1000;
+            margin: 400px auto;
+            padding: 10px;
+            width: 200px;
+            background-color: White;
+            border-radius: 10px;
+            filter: alpha(opacity=100);
+            opacity: 1;
+            -moz-opacity: 1;
+        }
+        .centerganesh img
+        {
+            background-color: Black;
+            width: 200px;
+        }
+</style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="MM_preloadImages('images/live1.GIF')">
+    <div class="modalganesh">
+        <div class="centerganesh">
+            <img alt="loadting" src="images/progress-indicator.gif" />
+        </div>
+    </div>
+    <form id="form1" runat="server">
+    <script type="text/javascript">
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+        //Raised before processing of an asynchronous postback starts and the postback request is sent to the server.
+        prm.add_beginRequest(BeginRequestHandler);
+        // Raised after an asynchronous postback is finished and control has been returned to the browser.
+        prm.add_endRequest(EndRequestHandler);
+
+        // prm.add_pageLoaded(BeginRequestHandler);
+        //   prm.remove_pageLoaded(EndRequestHandler);
+
+        function BeginRequestHandler(sender, args) {
+            //Shows the modal popup - the update progress
+            $('.modalganesh').css("display", "block");
+        }
+
+        function EndRequestHandler(sender, args) {
+            //Hide the modal popup - the update progress
+            $('.modalganesh').css("display", "none");
+        }
+    </script>
+    <div align="center">
+    <table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="282" rowspan="3"><img src="images/timesheet-software-logo.png" width="276" height="71" /></td>
+    <td width="457" height="27"><div align="right">
+      <table width="196" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="86"><div align="right"><img src="images/callus.gif" width="22" height="20" /></div></td>
+          <td width="110"><div align="right"><span class="style1">022-28261255 </span></div></td>
+        </tr>
+      </table>
+      </div></td>
+    <td width="72" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="http://timesheet.co.in/login"><img src="images/login.jpg" width="50" height="21" /></a>
+      <div align="right"></div></td></tr>
+  <tr>
+    <td colspan="2" valign="middle" height="5"></td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="middle"><div id="menu">
+          <ul>
+            <li>
+              <div align="center"><a href="http://www.timesheet.co.in" class="style6"> <span style="text-align:center">Home</span></a></div>
+            </li>
+            <li><a href="../timesheet-software-features.html"><span>Features</span></a></li>
+            <li><a href="../timesheet-software-screenshots.html"><span>Screenshots</span></a></li>
+            <li><a href="../timesheet-software-reports.html"><span>Reports</span></a></li>
+            <li><a href="../timesheet-pricing.html"><span>Pricing</span></a></li>
+            <li><a href="../timesheet-about-us.html" ><span>About Us</span></a></li>
+			<li><a href="../contactus.aspx" ><span>Contact Us</span></a></li>
+          </ul>
+    </div></td>
+  </tr>
+  </table>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

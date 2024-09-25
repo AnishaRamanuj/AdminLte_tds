@@ -1,0 +1,440 @@
+.chromestyle{
+	width:1000px;
+	height:auto;
+	float:left;
+	padding:17px 0px 0px 0px;
+}
+
+.chromestyle:after{ /*Add margin between menu and rest of content in Firefox*/
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+.chromestyle ul{
+	font-family:"Trebuchet MS";
+	font-size:13px;
+	color:#17626b;
+	font-weight:bold;
+	text-decoration:none;
+	padding:0px;
+	margin: 0;
+
+}
+.chromestyle ul li{
+	display: inline;
+}
+.chromestyle ul li a{
+	font-family:"Trebuchet MS";
+	font-size:11px;
+	color:#4d4b4b;
+	font-weight:bold;
+	text-decoration:none;
+	padding:0px 30px 0px 30px;
+	text-shadow: 0 1px 1px #999999;
+}
+.chromestyle ul li a:hover, .chromestyle ul li a.selected{ /*script dynamically adds a class of "selected" to the current active menu item*/
+	font-family:"Trebuchet MS";
+	font-size:11px;
+	color:#0981c0;
+	font-weight:bold;
+	text-decoration:none;
+	padding:0px 30px 0px 30px;text-shadow: 0 1px 1px #FFF; /*THEME CHANGE HERE*/
+}
+/* ######### Style for Drop Down Menu ######### */
+
+.dropmenudiv{
+position:absolute;
+top: 0;
+border: 1px solid #c9f2fb; /*THEME CHANGE HERE*/
+border-bottom-width: 0;
+font:normal 12px Verdana;
+line-height:18px;
+z-index:100;
+background:url(../../images/menu_strip.gif) repeat-x top;
+background-color:#297ba9;
+width: 180px;
+visibility: hidden;
+}
+
+
+.dropmenudiv a{
+width: auto;
+display: block;
+text-indent: 3px;
+border-bottom: 1px solid #FFF; /*THEME CHANGE HERE*/
+font-family:"Trebuchet MS";
+	font-size:11px;
+	color:#FFFFFF;
+	font-weight:bold;
+	text-decoration:none;
+	padding:7px 15px 7px 15px;
+}
+
+* html .dropmenudiv a{ /*IE only hack*/
+width: auto;
+font-family:"Trebuchet MS";
+	font-size:11px;
+	color:#17626b;
+	font-weight:bold;
+	text-decoration:none;
+	padding:7px 15px 7px 15px;
+}
+
+.dropmenudiv a:hover{ /*THEME CHANGE HERE*/
+background-color:#50b3e5;
+font-family:"Trebuchet MS";
+	font-size:11px;
+	color:#176268;
+	font-weight:bold;
+	text-decoration:none;
+	padding:7px 15px 7px 15px;
+}
+.home_over{
+	background:url(../../images/hover.gif) no-repeat center;
+	padding:0px;
+	width:92px;
+	height:44px;
+	}
+	.totbodycatreg
+{
+width:100%;
+margin:0px auto auto auto;
+height:auto;
+float:left;
+
+}
+.totrwcatreg
+{
+width:88%;
+min-height:25px;
+float:left;
+padding:5px 5% 5px 5%;	
+}
+.totrwcatreg123
+{
+width:95%;
+min-height:25px;
+float:left;
+padding:5px 0% 5px 5%;	
+}
+
+.totsmallcatreg
+{
+	width:20%;
+	min-height:15px;
+	padding:5px 5% 5px 5%;
+	float:left;
+}
+.totlftcatreg
+{
+	width:40%;
+	min-height:15px;
+	padding:5px 5% 5px 0%;
+	float:left;
+	margin-bottom: 0px;
+}
+.totlftcatreg12
+{
+	width:25%;
+	min-height:15px;
+	padding:5px 2% 5px 0%;
+	float:left;
+	text-align:right;
+}
+.totlftcatreg126
+{
+	width:25%;
+	min-height:15px;
+	padding:5px 2% 5px 0%;
+	float:left;
+	text-align:left;
+}
+.totlftcatreg125
+{
+	width:15%;
+	min-height:15px;
+	padding:5px 2% 5px 0%;
+	float:left;
+	text-align:left;
+}
+.totrhtcatreg
+{
+	width:45%;
+    min-height :15px;
+	padding:5px 5% 5px 1%;
+	float:left;
+}
+.wholecatreg
+{
+	width:90%;
+    min-height :15px;
+	padding:5px 5% 5px 5%;
+	float:left;
+}
+.wholecatreg12
+{
+	width:90%;
+    min-height :15px;
+	padding:5px 5% 5px 5%;
+	float:left;
+	border:solid 1px #B7B7B7;
+}
+.totintdiv
+{
+	width:99%;
+    height :auto;
+	padding:5px 0% 5px 0%;
+	float:left;
+}
+.icondiv
+{	
+	width: 23%; 
+	padding: 2%; 
+	float: left;
+	text-align:center;	
+ 
+}
+.labelstyle
+{
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-decoration:none;
+
+}
+.Head1
+{
+font-size:24px;
+font-family:Arial, Helvetica, sans-serif;
+color: #666666;
+font-weight:bold;
+}
+.Head2
+{
+ font-size:18px;
+font-family:Arial, Helvetica, sans-serif;
+color: #666666;
+font-weight:bold;
+}
+.insidetoterr
+{
+	width:97%;	
+	min-height:75px;
+	
+	float:left;	
+	/*background-color: #E8FDDC;	*/
+	background-color: #0C9BBD;
+	display:none;
+}
+.insidetot
+{
+	width:95%;	
+	min-height:75px;
+	
+	float:left;	
+}
+.comprwerr11
+{
+	 width:98%;
+	 min-height:16px;
+	 height:auto !important;
+	 height:16px;
+	display:none;
+}
+.seperotorrwrreg{width:95%;height:20px;float:left;}
+.comprw
+{
+	 width:98%;
+	 min-height:30px;
+		
+	float:left;
+	margin-right: 0px;
+}
+.comprwerr
+{
+	 width:98%;
+	 min-height:30px;	
+	float:left;
+	display:none;
+}
+.leftrw
+{
+	width:25%;
+	padding:5px 5% 5px 10%; 
+	min-height:20px;
+	
+ height:auto !important;
+	 height:29px !important;	
+	text-align:right;
+	float:left;
+}
+.rightrw
+{
+	width:55%;
+	padding:5px 5% 5px 0%; 
+	min-height:20px;
+	
+ height:auto !important;
+	 height:20px;	
+	float:left;
+}
+.leftrwerr
+{
+	width:10%;
+	padding:5px 5% 5px 10%; 
+	min-height:20px;
+	text-align:right;
+	float:left;
+}
+.rightrwerr
+{
+	width:70%;
+	padding:5px 5% 5px 0%; 
+	min-height:20px;
+	
+ height:auto !important;
+	 height:20px;	
+	float:left;
+}
+.leftrwerr12
+{
+	width:10%;
+	padding: 5px 5% 5px 0%; 
+	min-height:10px;
+	text-align:right;
+	float:left;
+}
+.rightrwerr12
+{
+	width:70%;
+	padding:5px 2% 5px  0%; 
+	min-height:10px;
+	
+ height:auto !important;
+	 height:10px;	
+	float:left;
+}
+fieldset
+{
+border: 1px solid #75DF71;
+width: 100%;
+background-color:#666666;
+}
+
+legend
+{
+font-size:11px;
+font-family:Arial, Helvetica, sans-serif;
+color: #fff;
+background: #666666;
+border: 1px solid #666666;
+padding: 2px 6px
+} 
+legend span {
+	display: none;
+	
+}
+.errlabelstyle
+{
+font-size:11px;
+ font-family:Arial, Helvetica, sans-serif;
+ color:#FFFFFF;
+}
+.labelerrstyle
+{
+ font-size:11px;
+ font-family:Arial, Helvetica, sans-serif;
+ color:#DC143C;
+}
+.leftrwnew
+{
+	width:20%;
+	padding:5px  2% 5px 10%; 
+	min-height:20px;
+	
+ height:auto !important;
+	 height:29px !important;	
+	text-align:right;
+	float:left;
+}
+.rightrwnew
+{
+	width:50%;
+	padding:5px 5% 5px 0%; 
+	min-height:20px;
+	
+ height:auto !important;
+	 height:20px;	
+	float:left;
+}
+.totbodycatreg
+{
+width:100%;
+margin:0px auto auto auto;
+height:auto;
+float:left;
+
+}
+.totrhtcatreg
+{
+	width:45%;
+    min-height :15px;
+	padding:5px 5% 5px 1%;
+	float:left;
+}
+.totlftcatreg126
+{
+	width:25%;
+	min-height:15px;
+	padding:5px 2% 5px 0%;
+	float:left;
+	text-align:left;
+}
+.labelstyle1
+{
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	/*color:#000000;*/
+	color:#ffffff;
+	text-decoration:none;
+
+}
+.labelstyle2
+{
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000000;
+	text-decoration:none;
+
+}
+.txtnrml2
+{
+	font-size:11px;
+    font-family :Arial, Helvetica, sans-serif;
+ 	border:solid 1px #999999;
+	padding:0 0 0 3px;
+	width:98%;
+	height:16px;
+}
+.linkstyle
+{
+font-size:11px;
+ font-family:Arial, Helvetica, sans-serif;
+ color:#0d7407;
+ text-decoration:none;
+}
+.gridhaedstyle
+{
+	
+	background-color:#0C9BBD;
+	border:none;
+	color:#ffffff;
+	font-weight:bold;
+	text-align:left;
+	padding:0 0 0 5px;	
+	min-height:25px;
+	
+}

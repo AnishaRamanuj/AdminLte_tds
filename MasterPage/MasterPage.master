@@ -1,0 +1,345 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>JTMS-Timesheet Software </title>
+    <!-- 
+    - favicon
+   -->
+   <link rel="shortcut icon next prev" href="..\img\Logo_header.jpg" type="image/svg+xml" />
+    <link rel="Stylesheet" type="text/css"  href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+    <link href="../css/all.min.css" rel="stylesheet" type="text/css" />
+    <link href="../icons/icomoon/styles.min.css" rel="stylesheet" type="text/css" />
+    <link href="../icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css" />
+    <link href="../icons/material/styles.min.css" rel="stylesheet" type="text/css" />
+    <link href="../icons/Pe7/pe-icon-7-stroke.css" rel="stylesheet" type="text/css" />
+   <%--<link rel="stylesheet" href="../css/toastr.min.css" type="text/css"/>--%>
+    <link href="../css/adminlte.min.css" rel="stylesheet" type="text/css" />
+     <%--<link href="../css/bootstrap-4.min.css" rel="stylesheet" type="text/css" />--%>
+    <link href="../css/colors.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/spinkit.css" rel="stylesheet" type="text/css" />   
+     <link href="../css/components.css" rel="stylesheet" type="text/css" />  
+    
+    <%--Code Added By SathishRam On 25-Feb-2023 add active class and stay opened when selected--%>
+    <style type="text/css">
+        .menu-active {
+            background-color: #fff !important;
+            color: #307D7E !important;
+            border-radius: 8px;
+        }
+    </style>
+
+
+
+    <!-- Core JS files -->
+    <script src="../JS/jquery.min.js" type="text/javascript"></script>
+    <script src="../JS/bootstrap.bundle.js" type="text/javascript"></script>
+    <script src="../JS/adminlte.js" type="text/javascript"></script>
+
+    <script src="../JS/blockui.min.js" type="text/javascript"></script>
+    <script src="../js/pnotify.min.js" type="text/javascript"></script>
+    <script src="../js/noty.min.js" type="text/javascript"></script>
+    <script src="../js/PopupAlert.js" type="text/javascript"></script>
+
+    <script src="../JS/select2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        //var CompanyPermissions = [];
+        $(document).ready(function () {
+            //var c = $("[id*=hdntxt]").val();
+            var r = $("[id*=hdnRole]").val();
+            var u = $("[id*=hdnLoginDetails]").val();
+            var m = $("[id*=hdnMnu]").val();
+            var HidenShow = $("[id*=hdnHidenShow]").val();
+            if (HidenShow == 'True') {
+    
+                document.getElementById("dvSupport").style.display = "none";
+            }
+
+            var StaffQuta = $("[id*=hdnStaffQuta]").val();
+            var StaffActive = $("[id*=hdnStaffActive]").val();
+            var Remaining = $("[id*=hdnRemaining]").val();
+            $("[id*=spnLogin]").html(u.split('~')[0]);
+            if (r == 'Admin') {
+                $("[id*=spnUserCount]").html("Users :" + StaffActive + '/' + StaffQuta);
+                $("[id*=spnDaysRemain]").html("Days Left :" + Remaining);
+            }
+            $("[id*=loginDtl]").html(u.split('~')[1]);
+            $("[id*=loginDtls]").html(u.split('~')[1]);
+            $("[id*=spnRole]").html(r);
+            $("[id*=hdnMnu]").val('');
+            $("[id*=divMnu]").html(m);
+            $("[id*=LoggedIN_]").html("Welcome " + u.split('~')[1]);
+
+            var hdnStaffDBImage = $("[id*=hdnStaffDBImage]").val();
+            if (hdnStaffDBImage != "") {
+                $("[id*=imgPhoto]").attr('src', hdnStaffDBImage);
+            }
+            else {
+                $("#imgPhoto").attr('src', "../images/DefaultFace.png");
+            }
+
+            //var filePath = $("[id*=hdncomlogo]").val();  //"../img/CompanyLogo/" + $("[id*=hdnCompanyid]").val() + ".jpg";
+			var filePath = "../img/CompanyLogo/" + $("[id*=hdncomlogo]").val() + ".jpg";
+            $("#imglogo").attr('src', filePath);
+
+            /** Code Added By SathishRam On 27-Feb-2023 to side menu collapse at initial */
+            $('.sidebar-mini').addClass('sidebar-closed sidebar-collapse');
+
+
+          /** Code Added By SathishRam On 25-Feb-2023 add active class and stay opened when selected */
+            var url = window.location;
+            // for sidebar menu entirely but not cover treeview
+            $('ul.nav-sidebar a').filter(function () {
+                return this.href == url;
+            }).parent().children().addClass('menu-active');
+
+            // for treeview
+            $('ul.nav-treeview a').filter(function () {
+                return this.href == url;
+            }).parentsUntil(".nav-sidebar > .nav-treeview").addClass('menu-open');
+
+            $("[id*= btnLgt]").on('click', function () {
+                Logout_Show();
+            });
+        });
+
+        function Logout_Show() {
+
+            var notice = new PNotify({
+                title: 'Confirmation',
+                text: '<p>Are you sure you want to logout?</p>',
+                hide: false,
+                type: 'warning',
+                confirm: {
+                    confirm: true,
+                    buttons: [
+                        {
+                            text: 'Yes',
+                            addClass: 'btn btn-outline-success legitRipple'
+                        },
+                        {
+                            addClass: 'btn btn-outline-success legitRipple'
+                        }
+                    ]
+                },
+                buttons: {
+                    closer: false,
+                    sticker: false
+                }
+            })
+
+            // On confirm
+            notice.get().on('pnotify.confirm', function () {
+                Logout();
+            })
+
+            // On cancel
+            notice.get().on('pnotify.cancel', function () {
+
+            });
+        }
+
+        function Logout() {
+            $.ajax({
+                type: "POST",
+                url: "../Services/Profile.asmx/Logout",
+                dataType: 'json',
+                contentType: "application/json; charset=utf-8",
+                success: function (msg) {
+                    if (msg.d == "true") {
+                      window.location.href = "../Default.aspx";
+                    }
+                },
+                failure: function (response) {
+                    Blockloaderhide();
+                },
+                error: function (response) {
+                    Blockloaderhide();
+                }
+            });
+            //window.location.href = '../default.aspx';
+
+        }
+        
+           function showText(event) {
+                event.preventDefault(); // Prevents the link from opening immediately
+                const link = event.currentTarget;
+                link.insertAdjacentHTML('afterend', '<p>How may I help you?</p>'); // Inserts the text after the link
+        }
+        
+    </script>
+   
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+    <form id="form1" runat="server"><!-- Brand Logo -->
+       <asp:ScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="360000"
+            ScriptMode="Release">
+        </asp:ScriptManager>
+<div class="wrapper">
+
+          <!-- Preloader -->
+         <%-- <div class="preloader flex-column justify-content-center align-items-center">
+            <img class="animation__shake" src="../img/CompanyLogo/885.jpeg" alt="Admin Logo" height="80" width="80"/>
+          </div>--%>
+
+          <!-- Navbar -->
+          <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+
+            <!-- Left navbar links -->
+              
+            <ul class="navbar-nav col-lg-10">
+             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+              <li class="nav-item d-none d-sm-inline-block">
+                  <span class="image user-panel mt-3 pb-3 mb-3" >
+                  <img name="imglogo" class="img-circle elevation-2" alt="company Image"  id="imglogo"/>
+
+                </span>
+
+                  
+            <span class="col-5" style="font-weight:bold; font-size:18px" id="spnLogin"></span>
+            <span class="subs title col-2" style="font-weight:600"  id="spnUserCount"></span>
+            <span  class="col-2" style="font-weight:600" id="spnDaysRemain"></span>
+              </li>
+              
+            </ul>
+            <%--<ul class="navbar-nav ml-md-auto">
+					                    <li class="nav-item"><span class="navbar-text ml-md-3 font-weight-bolder" style="font-size: 16px;" id="LoggedIN_">Welcome  Sanjay Pandya</span></li>
+                    <li class="nav-item">
+                        <a href="../default.aspx" class="navbar-nav-link legitRipple">
+                            <i class="icon-switch2"></i>
+                            <span class="d-md-none ml-2">Logout</span>
+                        </a>
+                    </li>
+                </ul>--%>
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+              <!-- Navbar Search -->
+              <li class="nav-item">
+                <%--<a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                  <i class="fas fa-search"></i>
+                </a>--%>
+                <div class="navbar-search-block">
+                  <form class="form-inline">
+                    <div class="input-group input-group-sm">
+                      <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                      <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit">
+                          <i class="fas fa-search"></i>
+                        </button>
+                        <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                          <i class="fas fa-times"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </li>
+
+  <span id="loginDtl" class=" font-weight-bold"> </span>
+              <li class="nav-item">
+                <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                  <i class="fas fa-expand-arrows-alt"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+               <a href="#" class="navbar-nav-link legitRipple"  onclick='Logout_Show()'>
+                            <i class="icon-switch2"></i>
+                            <input id="BtnLgt" type="button"  class="d-md-none ml-2" value="Logout" /> 
+                        </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.navbar -->
+
+          <!-- Main Sidebar Container -->
+          <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+           <%--<a href="" class="brand-link">
+              <img src="dist/img/user2-160x160.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+              <%--<span class="brand-text font-weight-light" id="spnLogin"></span>
+            </a>--%>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+              <!-- Sidebar user panel (optional) -->
+              <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div>
+                  <img class="img-circle elevation-2" alt="User Image" id="imgPhoto" />
+                </div>
+                <div class="info-1">
+                  <span id="loginDtls" class="d-block brand-text font-weight-light"></span>
+                    <span id="spnRole" class="font-size-sm text-white text-shadow-dark"></span>
+                </div>
+              </div>
+
+              <!-- SidebarSearch Form -->
+              <%--<div class="form-inline">
+                <div class="input-group" data-widget="sidebar-search">
+                  <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                  <div class="input-group-append">
+                    <button class="btn btn-sidebar">
+                      <i class="fas fa-search fa-fw"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>--%>
+
+              <!-- Sidebar Menu -->
+              <nav class="mt-2" id="divMnu">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                  <!-- Add icons to the links using the .nav-icon class
+                       with font-awesome or any other icon font library -->
+                  
+                </ul>
+              </nav>
+              <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+          </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+   <div class="content-wrapper">
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+       <!-- /.content-wrapper -->
+     
+       <!-- /Footer -->    
+     <footer class="main-footer">
+        <strong>Powered by  &copy; <a href="https://saibex.co.in/"  target="_blank">Saibex Network</a>.</strong>
+        All rights reserved.
+ 
+        <div id="dvSupport" class="float-right"  >
+          <b>Support:9892606006</b>&nbsp;&nbsp;&nbsp;<a href="https://api.whatsapp.com/send?phone=9892606006" target="_blank" onclick="showText">
+             <img   style="width: 157px;"  src="../images/WhatsappChatNow.png" alt="WhatsApp" title="How may I help you?"></a>
+        </div>
+  
+      </footer>   
+         <!-- /Footer -->      
+</div>
+<!-- ./wrapper -->
+        <asp:HiddenField ID="hdnMnu" runat="server" />
+        <asp:HiddenField ID="hdnComp" runat="server" />
+        <asp:HiddenField ID="hdnCompanyid" runat="server" />
+        <asp:HiddenField ID="hdnUser" runat="server" />
+        <asp:HiddenField ID="hdnLoginDetails" runat="server" />
+        <asp:HiddenField ID="hdnRole" runat="server" />
+        <asp:HiddenField ID="hdnLabelValues" runat="server" />
+        <asp:HiddenField ID="hdnMasterPageID" runat="server" ClientIDMode="Static" />
+        <asp:HiddenField ID="hdnStaffQuta" runat="server" />
+        <asp:HiddenField ID="hdnStaffActive" runat="server" />
+        <asp:HiddenField ID="hdnRemaining" runat="server" />
+        <asp:HiddenField ID="hdncomlogo" runat="server" />
+        <asp:HiddenField ID="hdnHidenShow" runat="server" />
+        <asp:HiddenField ID="hdnStaffDBImage" runat="server" />
+		 <asp:HiddenField ID="hdnAttachmentMandatory" runat="server" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿*{ margin:0;
+padding:0;}
+body{ font-family:Verdana,Arial,Helvetica,sans-serif;
+		font-size:11px;
+		font-weight:normal;
+	    color:#000000;}
+
+.main{ width:903px;  min-height: 100%; height: auto !important;height: 100%;  margin:0 auto;  }
+.login_box1{ width:886px;  min-height: 100%; height: auto !important;height: 100%;  margin:0 auto;  border-left:2px solid #55A0FF; border-right:2px solid #55A0FF;  }
+.login_box{ width:899px;  min-height: 100%; height: auto !important;height: 100%; margin:0 auto;  border-left:2px solid #55A0FF;  border-right:2px solid #55A0FF; }
+.login1{ width:825px;  min-height: 100%; height: auto !important;height: 100%;  float:left; margin-left:25px;}
+.login1_top1{ width:850px; height:53px; float:left; background: url(../images/companydetails_bg.jpg) no-repeat;}
+.login1_top{ width:850px; height:33px; float:left; background: url(../images/companydetails_bg.jpg) no-repeat;}
+.login1_cen{ width:850px; height:200px; float:left; background: url(../images/com_details_bg_cen.jpg) repeat-y;}
+.login2_cen{ width:850px; height:150px; float:left; background: url(../images/com_details_bg_cen.jpg) repeat-y;}
+.login2A_cenA{ width:850px; height:120px; float:left; background: url(../images/com_details_bg_cen.jpg) repeat-y;}
+.login1_btm{ width:850px; height:13px; float:left; }
+.clearall{ clear:both;}
+
+.login3_box2{  min-height: 100%; height: auto !important;height: 100%;  float:left; margin-left:20px;  padding: 0px 0px 0px 0px;}
+.login3_box1{  min-height: 100%; height: auto !important;height: 100%;  float:left; margin-left:10px;  padding: 0px 0px 0px 0px;}
+.login3_box{  min-height: 100%; height: auto !important;height: 100%;  float:left; margin-left:0px;  padding: 15px 0px 0px 0px;}
+.login2_box{width:880px;  min-height: 100%; height: auto !important;height: 100%;  float:left; margin-left:0px;  padding: 30px 10px 0px 10px;}
+.login2_box12{width:880px;  min-height: 100%; height: auto !important;height: 100%;  float:left; margin-left:0px;  padding: 10px 10px 0px 10px;}
+.login2A_box12A{width:880px;  min-height: 100%; height: auto !important;height: 100%;  float:left; margin-left:0px;  padding: 0px 10px 0px 10px;}
+.login2_box1{width:880px;  min-height: 100%; height: auto !important;height: 100%;  float:left; margin-left:0px;  padding: 10px 10px 0px 10px;}
+.account_left{ width:397px; height:230px; float:left; }
+.account_left1{ width:397px; height:275px; float:left;padding-right:50px; }
+.account_left2{ width:397px; height:275px; float:left;padding-left:50px; }
+.account_left3{ width:397px; height:300px; float:left;padding-left:50px; }
+
+.accountA_left3A{ width:357px; height:270px; float:left;padding-left:50px; }
+.personalA_left2A{ width:397px; height:270px; float:left; }
+
+.account_top{ width:397px; height:33px; float:left; background: url(../images/account_bg.jpg)  no-repeat;}
+/*.account_cen{ width:397px; height:140px; float:left; background:url(../images/account_bg_cen.jpg)  repeat-y;}*/
+.account_cen1{ width:397px; height:225px; float:left; background:url(../images/account_bg_cen.jpg)  repeat-y;}
+.accountA_cen1A{ width:397px; height:200px; float:left; background:url(../images/account_bg_cen.jpg)  repeat-y;}
+/*.account_btm{ width:397px; height:15px; float:left; background: url(../images/account_bg_btm.jpg) repeat-y;}*/
+.account_top1{ width:397px; height:59px; float:left; background: url(../images/account_bg.jpg)  no-repeat;}
+
+.personal_top1{ width:397px; height:59px; float:left; background: url(../images/account_bg.jpg)  no-repeat;}
+.personalA_top1A{ width:397px; height:59px; float:left; background: url(../images/account_bg.jpg)  no-repeat;}
+.personal_left{ width:397px; height:230px; float:left; padding-left:10px; }
+.personal_left1{ width:397px; height:215px; float:left; }
+.personal_left2{ width:397px; height:300px; float:left; }
+
+.personal_top{ width:397px; height:33px; float:left; background: url(../images/account_bg.jpg)  no-repeat;}
+.personal_cen{ width:397px; height:140px; float:left; background:url(../images/account_bg_cen.jpg)  repeat-y;}
+.personal_cen1{ width:397px; height:225px; float:left; background:url(../images/account_bg_cen.jpg)  repeat-y;}
+.personalA_cen1A{ width:397px; height:200px; float:left; background:url(../images/account_bg_cen.jpg)  repeat-y;}
+.personal_cen2{ width:397px; height:100px; float:left; background:url(../images/account_bg_cen.jpg)  repeat-y;}
+
+.personal_btm{ width:397px; height:15px; float:left; background: url(../images/account_bg_btm.jpg) repeat-y;}
+.personalA_btmA{ width:397px; height:15px; float:left; background: url(../images/account_bg_btm.jpg) repeat-y;}
+
+
+.table_1{ width:485px; height:185px; float:left;}
+.tableA_1A{ width:485px; height:185px; float:left;}
+.table_2{ width:340px; height:185px; float:left; padding-left:10px;}
+.table_3{ width:380px; height:185px; float:left; padding-left:0px;}
+.table_4{ width:380px; height:185px; float:left; padding-left:0px;}
+.tableA_4A{ width:397px; height:185px; float:left; padding-left:0px;}
+.table_text{ font-family:"Trebuchet MS", "Times New Roman", Arial; font-size:14px; color:#000; font-weight:bold;}
+
+/*.top{  width:903px;  min-height: 100%; height: auto !important;height: 100%;  margin:0 auto;}
+.logo{ width:250px; height:65px; float:left;}
+.header{ width:630px; height:50px; float: left; font-family:"Trebuchet MS", "Times New Roman", Arial; text-align:right; font-size:14px; color:#000000; padding-top:10px;}
+.header a{font-family:"Trebuchet MS", "Times New Roman", Arial; text-align:right; font-size:14px;color:#000000; padding-top:10px; text-decoration:none;}
+.header a:hover{font-family:"Trebuchet MS", "Times New Roman", Arial; text-align:right; font-size:14px; color:#55A0FF; padding-top:10px; text-decoration:none;}
+
+
+.top_box{ width:903px; height: auto; float:left; }
+.topbg{ width:903px; height:23px; float:left; background:url(../images/top_main1.jpg) no-repeat; }
+.topbg2{ width:899px;  min-height: 100%; height: auto !important;height: 100%;  border-left:2px solid #55A0FF; border-right:2px solid #55A0FF; float:left;  }
+
+.bottom{ font-family:Verdana,Arial,Helvetica,sans-serif;
+		font-size:11px;width:903px; height:40px; float:left; background:url(../images/date1.jpg) no-repeat; }
+.welcome{ width:450px; height: auto; float:left; padding:10px 0px 0px 15px; font-family:"Trebuchet MS", "Times New Roman", Arial; color:#000000; font-size:15px; font-weight:bold; }
+.login_btn{ width:auto; height: auto; float:left;  padding:10px 15px 0px 15px; font-family:"Trebuchet MS", "Times New Roman", Arial; color:#000; font-size:14px;  text-align:right;}
+.login_img{ width:103px; height: auto; float:right;  padding:0px 5px 0px 0px; margin-top:5px; }
+
+.menu_box{ width:899px; height:25px; float:left; background-color:#6fc3ff; margin:0px 2px 0px 2px;}*/
+
+.top{  width:903px;  min-height: 100%; height: auto !important;height: 100%;  margin:0 auto;}
+.logo{ width:250px; height:65px; float:left;}
+.header{ width:810px;float: left; font-family:Verdana,Arial,Helvetica,sans-serif; text-align:right; font-size:11px; color:#000000; padding-top:19px;vertical-align:bottom;}
+.header a{font-family:Verdana,Arial,Helvetica,sans-serif; text-align:right; font-size:11px;color:#55A0FF; padding-top:10px; text-decoration:none;}
+.header a:hover{font-family:Verdana,Arial,Helvetica,sans-serif; text-align:right; font-size:11px; color:#043A82; padding-top:10px; text-decoration:none;}
+
+
+.top_box{ width:903px; height: auto; float:left; }
+.topbg{ width:903px; height:12px; float:left; }
+.topbg2{ width:899px;  min-height: 100%; height: auto !important;height: 100%;  float:left;  }
+
+.bottom{ font-family:Verdana,Arial,Helvetica,sans-serif;
+		font-size:11px;width:903px; height:40px; float:left; background:url(../images/date1.jpg) no-repeat; }
+.welcome{ width:480px; height: 15px; float:right; padding:5px 0px 0px 15px; font-family:"Trebuchet MS", "Times New Roman", Arial; color:#000000; font-size:15px; font-weight:bold; }
+.login_btn{ width:280px;overflow:auto; height: auto; float:left;  padding:8px 15px 0; font-family:"Trebuchet MS", "Times New Roman", Arial; color:#000; font-size:14px;  text-align:right;}
+.login_img{ width:75px; height: auto; float:right;  padding:0px 5px 0px 0px; margin-top:10px; }
+
+.menu_box{ width:899px; height:25px; float:left; background-color:#6fc3ff; margin:0px 2px 0px 2px;}
+
+.welcome1{ width:480px; height: 15px; float:right; padding:2px 0px 0px 15px; font-family:"Trebuchet MS", "Times New Roman", Arial; color:#000000; font-size:15px; font-weight:bold; }
+
+

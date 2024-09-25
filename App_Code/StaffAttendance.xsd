@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<xs:schema id="StaffAttendance" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="StaffAttendance" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="names" type="xs:string" minOccurs="0" />
+              <xs:element name="StaffCode" type="xs:string" minOccurs="0" />
+              <xs:element name="d1" type="xs:string" minOccurs="0" />
+              <xs:element name="d2" type="xs:string" minOccurs="0" />
+              <xs:element name="d3" type="xs:string" minOccurs="0" />
+              <xs:element name="d4" type="xs:string" minOccurs="0" />
+              <xs:element name="d5" type="xs:string" minOccurs="0" />
+              <xs:element name="d6" type="xs:string" minOccurs="0" />
+              <xs:element name="d7" type="xs:string" minOccurs="0" />
+              <xs:element name="d8" type="xs:string" minOccurs="0" />
+              <xs:element name="d9" type="xs:string" minOccurs="0" />
+              <xs:element name="d10" type="xs:string" minOccurs="0" />
+              <xs:element name="d11" type="xs:string" minOccurs="0" />
+              <xs:element name="d12" type="xs:string" minOccurs="0" />
+              <xs:element name="d13" type="xs:string" minOccurs="0" />
+              <xs:element name="d14" type="xs:string" minOccurs="0" />
+              <xs:element name="d15" type="xs:string" minOccurs="0" />
+              <xs:element name="d16" type="xs:string" minOccurs="0" />
+              <xs:element name="d17" type="xs:string" minOccurs="0" />
+              <xs:element name="d18" type="xs:string" minOccurs="0" />
+              <xs:element name="d19" type="xs:string" minOccurs="0" />
+              <xs:element name="d20" type="xs:string" minOccurs="0" />
+              <xs:element name="d21" type="xs:string" minOccurs="0" />
+              <xs:element name="d22" type="xs:string" minOccurs="0" />
+              <xs:element name="d23" type="xs:string" minOccurs="0" />
+              <xs:element name="d24" type="xs:string" minOccurs="0" />
+              <xs:element name="d25" type="xs:string" minOccurs="0" />
+              <xs:element name="d26" type="xs:string" minOccurs="0" />
+              <xs:element name="d27" type="xs:string" minOccurs="0" />
+              <xs:element name="d28" type="xs:string" minOccurs="0" />
+              <xs:element name="d29" type="xs:string" minOccurs="0" />
+              <xs:element name="d30" type="xs:string" minOccurs="0" />
+              <xs:element name="d31" type="xs:string" minOccurs="0" />
+              <xs:element name="totP" type="xs:int" minOccurs="0" />
+              <xs:element name="totA" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

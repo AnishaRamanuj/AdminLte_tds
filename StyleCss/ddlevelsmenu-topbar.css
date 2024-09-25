@@ -1,0 +1,74 @@
+/* ######### Matt Black Strip Main Menu Bar CSS ######### */
+
+.mattblackmenu ul{
+    background: none repeat scroll 0 0 #F2F2F2;
+    border: 1px solid #CCCCCC;
+    clear: both;
+    color: #000000;
+    float: left;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 1000px;
+}
+
+#submenu_3{ border-top:none;}
+#submenu_9{ border-top:none;}
+#submenu_3{ background:#D4D4D4 !important;}
+#submenu_3 li a{ background:#D4D4D4;}
+#submenu_21, #submenu_29, #submenu_16{ border-top:none;}
+.mattblackmenu li{
+display: inline;
+margin: 0px; 
+font-weight:normal;
+}
+
+.mattblackmenu li a{
+float: left;
+display:block;
+text-decoration: none;
+margin:0 px;
+padding: 10px 10px; /*padding inside each tab*/
+border-right: 1px solid #C0C0C0;
+color:#474747;
+font-weight: bold;
+}
+
+.mattblackmenu li a:visited{
+color: black;
+}
+
+.mattblackmenu li a:hover{
+background:#DFDFDF;
+color:#000;
+
+ /*background of tabs for hover state */
+}
+
+.mattblackmenu a.selected{
+background:white;
+color:#6698FF;
+ /*background of tab with "selected" class assigned to its LI */
+}
+
+.border1
+{
+	border-bottom : 1px solid white; border-right :1px solid white;
+}
+
+.border0
+{
+	border-bottom : 0px; border-right :1px solid white;
+}
+.borderR
+{
+	border-right :1px solid white;	
+}
+.liwidth
+{
+	width :183px;
+}
+
+#submenu_188{border-top:none;}

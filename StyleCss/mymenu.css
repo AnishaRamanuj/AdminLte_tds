@@ -1,0 +1,220 @@
+﻿.topHMenu
+{
+    margin-bottom:-10px;
+    }
+.topHMenu ul
+{
+    display: block;
+    padding: 0;
+    background: rgb(40, 121, 229);
+    text-align: justify;
+    border: 1px solid white;
+    z-index: 9999;
+}
+
+.topHMenu ul li
+{
+    display: block;
+    position: relative;
+    float: left;
+    background: rgb(40, 121, 229);
+    border-right: 1px solid white;
+    text-align: justify;
+    font-size: small;
+    z-index: 9999;
+}
+
+/* This hides the dropdowns */
+
+
+.topHMenu li ul
+{
+    display: none;
+    z-index: 9999;
+}
+
+.topHMenu ul li a
+{
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+    z-index: 999;
+    overflow: hidden;
+    text-transform:capitalize;
+}
+
+.topHMenu ul li ul li
+{
+    border-right: none;
+    border-top: 1px solid #fff;
+    float: none;
+}
+.topHMenu ul li ul li a
+{
+    padding-right: 20px;
+}
+
+
+.topHMenu ul li a:hover
+{
+    background: #6db3f2;
+    z-index: 999;
+}
+
+/* Display the dropdown */
+
+
+.topHMenu li:hover > ul
+{
+    display: block;
+    position: absolute;
+}
+
+.topHMenu li:hover li
+{
+    float: none;
+}
+
+.topHMenu li:hover a
+{
+    background: rgb(40, 121, 229);
+}
+
+.topHMenu li:hover li a:hover
+{
+    background: #6db3f2;
+}
+
+.topHMenu .main-navigation li ul li
+{
+    border-top: 0;
+}
+
+/* Displays second level dropdowns to the right of the first level dropdown */
+
+
+.topHMenu ul ul ul
+{
+    left: 100%;
+    top: 0;
+}
+
+/* Simple clearfix */
+
+
+
+.topHMenu ul:before, ul:after
+{
+    content: " "; /* 1 */
+    display: table; /* 2 */
+    z-index: 999;
+}
+
+.topHMenu ul:after
+{
+    z-index: 999;
+    clear: both;
+}
+.arrow-right
+{
+    /*content: '▼';     font-size: 9px;     padding-left: 6px;     color: rgba(255,255,255,0.4);*/
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fff;
+    float: right;
+    margin-left: 10px;
+    position: relative;
+    margin-top: 4px;
+    margin-right: -15px;
+}
+.arrow-down
+{
+    width: 0;
+    height: 0;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #fff;
+    float: right;
+    margin-left: 10px;
+    position: relative;
+    margin-top: 6px;
+}
+/*ul#navMenu
+{
+    padding: 0px;
+    margin: 0px;
+    width: 420px;
+    list-style: none;
+    position: relative;
+}
+
+ul#navMenu ul
+{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul#navMenu li
+{
+    display: inline;
+    float: left;
+    position: relative;
+}
+
+ul#navMenu a
+{
+    text-decoration: none;
+    padding: 10px 0px;
+    width: 100px;
+    background: #666666;
+    color: #ffffff;
+    float: left;
+    text-align: center;
+    border: 1px solid #ffffff;
+}
+
+ul#navMenu a:hover
+{
+    background: #cccccc;
+    color: #333333;
+}
+
+ul#navMenu li:hover ul
+{
+    display: block;
+}
+
+ul#navMenu ul a
+{
+    width: 150px;
+}
+
+ul#navMenu ul li
+{
+    display: block;
+    margin: 0px;
+}
+
+ul#navMenu ul ul
+{
+    top: 0;
+    left: 100%;
+}
+
+ul#navMenu li:hover ul ul
+{
+    display: none;
+}
+
+ul#navMenu ul li:hover ul
+{
+    display: block;
+}*/

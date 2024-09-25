@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<xs:schema id="Client_AllJob_AllStaff" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Client_AllJob_AllStaff" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Srno" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalSub" type="xs:string" minOccurs="0" />
+              <xs:element name="Hours1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Charges" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Ope" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Jobid" type="xs:int" minOccurs="0" />
+              <xs:element name="Clientid" type="xs:int" minOccurs="0" />
+              <xs:element name="Staffid" type="xs:int" minOccurs="0" />
+              <xs:element name="Compid" type="xs:int" minOccurs="0" />
+              <xs:element name="Date1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RptName" type="xs:string" minOccurs="0" />
+              <xs:element name="Usr" type="xs:string" minOccurs="0" />
+              <xs:element name="OpeID" type="xs:int" minOccurs="0" />
+              <xs:element name="Narration" type="xs:string" minOccurs="0" />
+              <xs:element name="BudHours" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BudAmt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Chargesope" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ClientName" type="xs:string" minOccurs="0" />
+              <xs:element name="StaffName" type="xs:string" minOccurs="0" />
+              <xs:element name="OPEName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

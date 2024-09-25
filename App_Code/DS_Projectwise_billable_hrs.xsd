@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Projectwise_billable_hrs" targetNamespace="http://tempuri.org/DS_Projectwise_billable_hrs.xsd" xmlns:mstns="http://tempuri.org/DS_Projectwise_billable_hrs.xsd" xmlns="http://tempuri.org/DS_Projectwise_billable_hrs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Projectwise_billable_hrs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DS_Projectwise_billable_hrs" msprop:Generator_UserDSName="DS_Projectwise_billable_hrs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_Projectwise_Billable_hrs" msprop:Generator_TableClassName="DT_Projectwise_Billable_hrsDataTable" msprop:Generator_TableVarName="tableDT_Projectwise_Billable_hrs" msprop:Generator_TablePropName="DT_Projectwise_Billable_hrs" msprop:Generator_RowDeletingName="DT_Projectwise_Billable_hrsRowDeleting" msprop:Generator_RowChangingName="DT_Projectwise_Billable_hrsRowChanging" msprop:Generator_RowEvHandlerName="DT_Projectwise_Billable_hrsRowChangeEventHandler" msprop:Generator_RowDeletedName="DT_Projectwise_Billable_hrsRowDeleted" msprop:Generator_UserTableName="DT_Projectwise_Billable_hrs" msprop:Generator_RowChangedName="DT_Projectwise_Billable_hrsRowChanged" msprop:Generator_RowEvArgName="DT_Projectwise_Billable_hrsRowChangeEvent" msprop:Generator_RowClassName="DT_Projectwise_Billable_hrsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" type="xs:string" minOccurs="0" />
+              <xs:element name="Billable" msprop:Generator_ColumnVarNameInTable="columnBillable" msprop:Generator_ColumnPropNameInRow="Billable" msprop:Generator_ColumnPropNameInTable="BillableColumn" msprop:Generator_UserColumnName="Billable" type="xs:string" minOccurs="0" />
+              <xs:element name="Nonbillable" msprop:Generator_ColumnVarNameInTable="columnNonbillable" msprop:Generator_ColumnPropNameInRow="Nonbillable" msprop:Generator_ColumnPropNameInTable="NonbillableColumn" msprop:Generator_UserColumnName="Nonbillable" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

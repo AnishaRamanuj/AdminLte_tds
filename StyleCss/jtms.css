@@ -1,0 +1,18 @@
+*{ padding:0;
+   margin:0;}
+   
+body{ font-family:"Trebuchet MS", "Times New Roman", Arial; background-color:#b6babd;}
+.main{ width:950px; height: auto; margin:0 auto;}
+.main_con{ width:950px; height:400px; float:left; margin:35px 0px 0px 0px;}
+.logo{ width:926px; height:108px; float:left; padding:85px 0px 0px 0px; }
+.logo1{ width:300px; height:108px; float:left; padding:0px 0px 0px 10px; }
+.logo2{ width:270px; height:60px; float:left; padding:20px 0px 0px 20px; }
+.user{ width:750px; height:200px; float:left; padding:20px 50px 0px 80px; }
+.user_1{ width: 450px; height:250px; margin:auto;}
+.user_box{ width:400px; height:250px; padding-left:40px;}
+.login_left{width:23px; height:235px;  float:left;}
+.login_cen{width:300px; height:235px;  float:left;  padding-left:0px;}
+.login_right{width:23px; height:235px;  float:left; }
+.login{ width:350px; height:140px;  margin:0 auto; padding:40px 0px 20px 0px;}
+.username1{ height:40px; float:left; font-size:16px; font-family:"Trebuchet MS", "Times New Roman", Arial; font-weight:bold;}
+.all{ width:350px; height:25px; margin:0 auto; padding:20px 0px 0px 0px; color:#0f669c; text-align:center; font-family:"Trebuchet MS", "Times New Roman", Arial; }

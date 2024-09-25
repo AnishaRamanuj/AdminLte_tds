@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<xs:schema id="ClientList" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ClientList" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CLTId" type="xs:int" minOccurs="0" />
+              <xs:element name="CompId" type="xs:int" minOccurs="0" />
+              <xs:element name="ClientName" type="xs:string" minOccurs="0" />
+              <xs:element name="Address1" type="xs:string" minOccurs="0" />
+              <xs:element name="Address2" type="xs:string" minOccurs="0" />
+              <xs:element name="Address3" type="xs:string" minOccurs="0" />
+              <xs:element name="City" type="xs:string" minOccurs="0" />
+              <xs:element name="Pin" type="xs:string" minOccurs="0" />
+              <xs:element name="Country" type="xs:string" minOccurs="0" />
+              <xs:element name="BusPhone" type="xs:string" minOccurs="0" />
+              <xs:element name="BusFax" type="xs:string" minOccurs="0" />
+              <xs:element name="Website" type="xs:string" minOccurs="0" />
+              <xs:element name="ContPerson" type="xs:string" minOccurs="0" />
+              <xs:element name="ContMob" type="xs:string" minOccurs="0" />
+              <xs:element name="ContEmail" type="xs:string" minOccurs="0" />
+              <xs:element name="CTGId" type="xs:int" minOccurs="0" />
+              <xs:element name="CreationDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Partner" type="xs:string" minOccurs="0" />
+              <xs:element name="username" type="xs:string" minOccurs="0" />
+              <xs:element name="password" type="xs:string" minOccurs="0" />
+              <xs:element name="Role" type="xs:string" minOccurs="0" />
+              <xs:element name="IsApproved" type="xs:boolean" minOccurs="0" />
+              <xs:element name="UserId" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+              <xs:element name="Old_Cltid" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Old_CTGId" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ClientGroupName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_StaffProjectDetails" targetNamespace="http://tempuri.org/DS_StaffProjectDetails.xsd" xmlns:mstns="http://tempuri.org/DS_StaffProjectDetails.xsd" xmlns="http://tempuri.org/DS_StaffProjectDetails.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_StaffProjectDetails" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DS_StaffProjectDetails" msprop:Generator_UserDSName="DS_StaffProjectDetails">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_StaffProjectDetails" msprop:Generator_TableClassName="DT_StaffProjectDetailsDataTable" msprop:Generator_TableVarName="tableDT_StaffProjectDetails" msprop:Generator_TablePropName="DT_StaffProjectDetails" msprop:Generator_RowDeletingName="DT_StaffProjectDetailsRowDeleting" msprop:Generator_RowChangingName="DT_StaffProjectDetailsRowChanging" msprop:Generator_RowEvHandlerName="DT_StaffProjectDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="DT_StaffProjectDetailsRowDeleted" msprop:Generator_UserTableName="DT_StaffProjectDetails" msprop:Generator_RowChangedName="DT_StaffProjectDetailsRowChanged" msprop:Generator_RowEvArgName="DT_StaffProjectDetailsRowChangeEvent" msprop:Generator_RowClassName="DT_StaffProjectDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Staffname" msprop:Generator_ColumnVarNameInTable="columnStaffname" msprop:Generator_ColumnPropNameInRow="Staffname" msprop:Generator_ColumnPropNameInTable="StaffnameColumn" msprop:Generator_UserColumnName="Staffname" type="xs:string" minOccurs="0" />
+              <xs:element name="Deptname" msprop:Generator_ColumnVarNameInTable="columnDeptname" msprop:Generator_ColumnPropNameInRow="Deptname" msprop:Generator_ColumnPropNameInTable="DeptnameColumn" msprop:Generator_UserColumnName="Deptname" type="xs:string" minOccurs="0" />
+              <xs:element name="desiname" msprop:Generator_ColumnVarNameInTable="columndesiname" msprop:Generator_ColumnPropNameInRow="desiname" msprop:Generator_ColumnPropNameInTable="desinameColumn" msprop:Generator_UserColumnName="desiname" type="xs:string" minOccurs="0" />
+              <xs:element name="jobstatus" msprop:Generator_ColumnVarNameInTable="columnjobstatus" msprop:Generator_ColumnPropNameInRow="jobstatus" msprop:Generator_ColumnPropNameInTable="jobstatusColumn" msprop:Generator_UserColumnName="jobstatus" type="xs:string" minOccurs="0" />
+              <xs:element name="projectname" msprop:Generator_ColumnVarNameInTable="columnprojectname" msprop:Generator_ColumnPropNameInRow="projectname" msprop:Generator_ColumnPropNameInTable="projectnameColumn" msprop:Generator_UserColumnName="projectname" type="xs:string" minOccurs="0" />
+              <xs:element name="Totaltime" msprop:Generator_ColumnVarNameInTable="columnTotaltime" msprop:Generator_ColumnPropNameInRow="Totaltime" msprop:Generator_ColumnPropNameInTable="TotaltimeColumn" msprop:Generator_UserColumnName="Totaltime" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

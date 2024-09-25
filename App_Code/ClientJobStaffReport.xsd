@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ClientJobStaffReport" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ClientJobStaffReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClientName" type="xs:string" minOccurs="0" />
+              <xs:element name="MJobName" type="xs:string" minOccurs="0" />
+              <xs:element name="CreationDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EndDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BudHours" type="xs:double" minOccurs="0" />
+              <xs:element name="BudAMt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JobStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="Approver" type="xs:string" minOccurs="0" />
+              <xs:element name="StaffName" type="xs:string" minOccurs="0" />
+              <xs:element name="CompId" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

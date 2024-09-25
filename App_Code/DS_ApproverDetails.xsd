@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_ApproverDetails" targetNamespace="http://tempuri.org/DS_ApproverDetails.xsd" xmlns:mstns="http://tempuri.org/DS_ApproverDetails.xsd" xmlns="http://tempuri.org/DS_ApproverDetails.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_ApproverDetails" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DS_ApproverDetails" msprop:Generator_DataSetName="DS_ApproverDetails">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_ApproverDetails" msprop:Generator_TableClassName="DT_ApproverDetailsDataTable" msprop:Generator_TableVarName="tableDT_ApproverDetails" msprop:Generator_TablePropName="DT_ApproverDetails" msprop:Generator_RowDeletingName="DT_ApproverDetailsRowDeleting" msprop:Generator_RowChangingName="DT_ApproverDetailsRowChanging" msprop:Generator_RowEvHandlerName="DT_ApproverDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="DT_ApproverDetailsRowDeleted" msprop:Generator_UserTableName="DT_ApproverDetails" msprop:Generator_RowChangedName="DT_ApproverDetailsRowChanged" msprop:Generator_RowEvArgName="DT_ApproverDetailsRowChangeEvent" msprop:Generator_RowClassName="DT_ApproverDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Srno" msprop:Generator_ColumnVarNameInTable="columnSrno" msprop:Generator_ColumnPropNameInRow="Srno" msprop:Generator_ColumnPropNameInTable="SrnoColumn" msprop:Generator_UserColumnName="Srno" type="xs:string" minOccurs="0" />
+              <xs:element name="Approver" msprop:Generator_ColumnVarNameInTable="columnApprover" msprop:Generator_ColumnPropNameInRow="Approver" msprop:Generator_ColumnPropNameInTable="ApproverColumn" msprop:Generator_UserColumnName="Approver" type="xs:string" minOccurs="0" />
+              <xs:element name="Rtype" msprop:Generator_ColumnVarNameInTable="columnRtype" msprop:Generator_ColumnPropNameInRow="Rtype" msprop:Generator_ColumnPropNameInTable="RtypeColumn" msprop:Generator_UserColumnName="Rtype" type="xs:string" minOccurs="0" />
+              <xs:element name="ProjectName" msprop:Generator_ColumnVarNameInTable="columnProjectName" msprop:Generator_ColumnPropNameInRow="ProjectName" msprop:Generator_ColumnPropNameInTable="ProjectNameColumn" msprop:Generator_UserColumnName="ProjectName" type="xs:string" minOccurs="0" />
+              <xs:element name="StaffName" msprop:Generator_ColumnVarNameInTable="columnStaffName" msprop:Generator_ColumnPropNameInRow="StaffName" msprop:Generator_ColumnPropNameInTable="StaffNameColumn" msprop:Generator_UserColumnName="StaffName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

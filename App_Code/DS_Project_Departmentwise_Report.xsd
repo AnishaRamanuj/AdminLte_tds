@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Project_Departmentwise_Report" targetNamespace="http://tempuri.org/DS_Project_Departmentwise_Report.xsd" xmlns:mstns="http://tempuri.org/DS_Project_Departmentwise_Report.xsd" xmlns="http://tempuri.org/DS_Project_Departmentwise_Report.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Project_Departmentwise_Report" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DS_Project_Departmentwise_Report" msprop:Generator_DataSetName="DS_Project_Departmentwise_Report">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_Project_Departmentwise_Report" msprop:Generator_TableClassName="DT_Project_Departmentwise_ReportDataTable" msprop:Generator_TableVarName="tableDT_Project_Departmentwise_Report" msprop:Generator_TablePropName="DT_Project_Departmentwise_Report" msprop:Generator_RowDeletingName="DT_Project_Departmentwise_ReportRowDeleting" msprop:Generator_RowChangingName="DT_Project_Departmentwise_ReportRowChanging" msprop:Generator_RowEvHandlerName="DT_Project_Departmentwise_ReportRowChangeEventHandler" msprop:Generator_RowDeletedName="DT_Project_Departmentwise_ReportRowDeleted" msprop:Generator_UserTableName="DT_Project_Departmentwise_Report" msprop:Generator_RowChangedName="DT_Project_Departmentwise_ReportRowChanged" msprop:Generator_RowEvArgName="DT_Project_Departmentwise_ReportRowChangeEvent" msprop:Generator_RowClassName="DT_Project_Departmentwise_ReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProjectName" msprop:Generator_ColumnVarNameInTable="columnProjectName" msprop:Generator_ColumnPropNameInRow="ProjectName" msprop:Generator_ColumnPropNameInTable="ProjectNameColumn" msprop:Generator_UserColumnName="ProjectName" type="xs:string" minOccurs="0" />
+              <xs:element name="DepartmentName" msprop:Generator_ColumnVarNameInTable="columnDepartmentName" msprop:Generator_ColumnPropNameInRow="DepartmentName" msprop:Generator_ColumnPropNameInTable="DepartmentNameColumn" msprop:Generator_UserColumnName="DepartmentName" type="xs:string" minOccurs="0" />
+              <xs:element name="StaffName" msprop:Generator_ColumnVarNameInTable="columnStaffName" msprop:Generator_ColumnPropNameInRow="StaffName" msprop:Generator_ColumnPropNameInTable="StaffNameColumn" msprop:Generator_UserColumnName="StaffName" type="xs:string" minOccurs="0" />
+              <xs:element name="THours" msprop:Generator_ColumnVarNameInTable="columnTHours" msprop:Generator_ColumnPropNameInRow="THours" msprop:Generator_ColumnPropNameInTable="THoursColumn" msprop:Generator_UserColumnName="THours" type="xs:string" minOccurs="0" />
+              <xs:element name="Bill" msprop:Generator_ColumnVarNameInTable="columnBill" msprop:Generator_ColumnPropNameInRow="Bill" msprop:Generator_ColumnPropNameInTable="BillColumn" msprop:Generator_UserColumnName="Bill" type="xs:string" minOccurs="0" />
+              <xs:element name="nonBill" msprop:Generator_ColumnVarNameInTable="columnnonBill" msprop:Generator_ColumnPropNameInRow="nonBill" msprop:Generator_ColumnPropNameInTable="nonBillColumn" msprop:Generator_UserColumnName="nonBill" type="xs:string" minOccurs="0" />
+              <xs:element name="Holiday" msprop:Generator_ColumnVarNameInTable="columnHoliday" msprop:Generator_ColumnPropNameInRow="Holiday" msprop:Generator_ColumnPropNameInTable="HolidayColumn" msprop:Generator_UserColumnName="Holiday" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

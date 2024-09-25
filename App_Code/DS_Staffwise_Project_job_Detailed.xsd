@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Staffwise_Project_job_Detailed" targetNamespace="http://tempuri.org/DS_Staffwise_Project_job_Detailed.xsd" xmlns:mstns="http://tempuri.org/DS_Staffwise_Project_job_Detailed.xsd" xmlns="http://tempuri.org/DS_Staffwise_Project_job_Detailed.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Staffwise_Project_job_Detailed" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DS_Staffwise_Project_job_Detailed" msprop:Generator_DataSetName="DS_Staffwise_Project_job_Detailed">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Dt_Staffwise_Project_Job_Detailed" msprop:Generator_TableClassName="Dt_Staffwise_Project_Job_DetailedDataTable" msprop:Generator_TableVarName="tableDt_Staffwise_Project_Job_Detailed" msprop:Generator_TablePropName="Dt_Staffwise_Project_Job_Detailed" msprop:Generator_RowDeletingName="Dt_Staffwise_Project_Job_DetailedRowDeleting" msprop:Generator_RowChangingName="Dt_Staffwise_Project_Job_DetailedRowChanging" msprop:Generator_RowEvHandlerName="Dt_Staffwise_Project_Job_DetailedRowChangeEventHandler" msprop:Generator_RowDeletedName="Dt_Staffwise_Project_Job_DetailedRowDeleted" msprop:Generator_UserTableName="Dt_Staffwise_Project_Job_Detailed" msprop:Generator_RowChangedName="Dt_Staffwise_Project_Job_DetailedRowChanged" msprop:Generator_RowEvArgName="Dt_Staffwise_Project_Job_DetailedRowChangeEvent" msprop:Generator_RowClassName="Dt_Staffwise_Project_Job_DetailedRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StaffName" msprop:Generator_ColumnVarNameInTable="columnStaffName" msprop:Generator_ColumnPropNameInRow="StaffName" msprop:Generator_ColumnPropNameInTable="StaffNameColumn" msprop:Generator_UserColumnName="StaffName" type="xs:string" minOccurs="0" />
+              <xs:element name="ProjectName" msprop:Generator_ColumnVarNameInTable="columnProjectName" msprop:Generator_ColumnPropNameInRow="ProjectName" msprop:Generator_ColumnPropNameInTable="ProjectNameColumn" msprop:Generator_UserColumnName="ProjectName" type="xs:string" minOccurs="0" />
+              <xs:element name="jobname" msprop:Generator_ColumnVarNameInTable="columnjobname" msprop:Generator_ColumnPropNameInRow="jobname" msprop:Generator_ColumnPropNameInTable="jobnameColumn" msprop:Generator_UserColumnName="jobname" type="xs:string" minOccurs="0" />
+              <xs:element name="tdate" msprop:Generator_ColumnVarNameInTable="columntdate" msprop:Generator_ColumnPropNameInRow="tdate" msprop:Generator_ColumnPropNameInTable="tdateColumn" msprop:Generator_UserColumnName="tdate" type="xs:string" minOccurs="0" />
+              <xs:element name="Hours" msprop:Generator_ColumnVarNameInTable="columnHours" msprop:Generator_ColumnPropNameInRow="Hours" msprop:Generator_ColumnPropNameInTable="HoursColumn" msprop:Generator_UserColumnName="Hours" type="xs:string" minOccurs="0" />
+              <xs:element name="charges" msprop:Generator_ColumnVarNameInTable="columncharges" msprop:Generator_ColumnPropNameInRow="charges" msprop:Generator_ColumnPropNameInTable="chargesColumn" msprop:Generator_UserColumnName="charges" type="xs:string" minOccurs="0" />
+              <xs:element name="ope" msprop:Generator_ColumnVarNameInTable="columnope" msprop:Generator_ColumnPropNameInRow="ope" msprop:Generator_ColumnPropNameInTable="opeColumn" msprop:Generator_UserColumnName="ope" type="xs:string" minOccurs="0" />
+              <xs:element name="ChargesOPE" msprop:Generator_ColumnVarNameInTable="columnChargesOPE" msprop:Generator_ColumnPropNameInRow="ChargesOPE" msprop:Generator_ColumnPropNameInTable="ChargesOPEColumn" msprop:Generator_UserColumnName="ChargesOPE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

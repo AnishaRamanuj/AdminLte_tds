@@ -1,0 +1,27 @@
+﻿body {
+}
+ .quick_login_inner{width:213px;height:200px;padding:5px;}
+.quick_login_inner label{color:#40908F;float:left;}
+.quick_login_inner input{width:120px;height:25px;float:right;border:1px solid #40908F;padding:0px;margin:0px 0px 5px 0;}
+.quick_login_inner textarea{width:140px;height:63px;float:right;border:1px solid #52b952;padding:0px;margin:0px 0px 5px 0;}
+.quick_login_inner select{width:120px;height:25px;float:right;border:1px solid #52b952;padding:0px;margin:0px 0px 5px 0;}
+
+div.rowlogin {float: left; margin: 0; padding: 0; width: 99.9%; padding-top :1px; padding-bottom :1px;}
+div.cols2loginLeft {float: left; width: 35%; margin: 4px 3px 0 0; padding: 0;   padding-bottom :3px; padding-top :3px;}
+div.cols2loginRight {float: left; width: 60%; margin: 0 0px 0 0; padding: 0;  padding-bottom :1px; padding-top :1px;}
+
+#login_btn
+{
+	width:61px;
+	height:25px;
+	float:inherit;
+}
+#login_btn input
+{
+	width:61px;
+	height:25px;
+	background:url(../images/login.jpg) top left no-repeat;
+	border:0px;
+	cursor:pointer;
+}
+
